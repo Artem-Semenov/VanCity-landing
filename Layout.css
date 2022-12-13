@@ -41,12 +41,13 @@ line-height: 20px;
 
 .footer {
   margin-top: 58px;
+  padding-bottom: 24px;
 }
 .footer-content {
   background: url(img/footer-bg-xs.svg) no-repeat;
   display: flex;
   flex-wrap: wrap;
-  padding: 90px 12px 51px 12px;
+  padding: 90px 12px 0px 12px;
   position: relative;
 }
 .footer-content div {
@@ -123,17 +124,34 @@ color: #112C41;
 .footer .footer-logo-bg {
 display: block;
 position: relative;
+height: 285px;
+flex-basis: 100%;
+overflow: hidden; 
 }
 .footer .footer-logo-bg > picture {
   position: absolute;
-  top: 106px;
-  left: -37px;
+  top: 127px;
+  left: -7px;
 }
+
+.footer-arrow-up {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
 .footer-privacy-policy {
+  margin-top: 24px;
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+color: #B1DEDB;
+display: flex;
+justify-content: space-between;
 }
-
-
-
 @media (min-width: 640px) {
   .header-contact-us button {
     font-size: 14px;
@@ -141,6 +159,14 @@ position: relative;
   }
   .footer-content {
     background: url(img/footer-bg-s.svg) no-repeat;
+  }
+  .footer .footer-logo-bg > picture {
+    top: 100px;
+    left: 20px
+  }
+  .footer .footer-logo-bg > picture > img {
+    width: 450px;
+    height: 170px;
   }
 }
 @media (min-width: 1024px) {
@@ -175,17 +201,33 @@ position: relative;
   .footer-content {
     margin: 0 -10px;
     background: url(img/footer-bg-m.svg) no-repeat;
-    padding: 90px 250px 354px 130px;
-   
-  }
+    padding: 90px 250px 0px 130px;
+     }
+     .footer .footer-logo-bg {
+      overflow: visible;
+      height: 365px;
+     }    
+     .footer .footer-logo-bg > picture {
+ 
+      top: 100px;
+      left: 20px
+    }
+    .footer .footer-logo-bg > picture > img {
+      width: unset;
+      height: unset;
+    }
+    .footer-arrow-up {
+      right: 22px;
+      bottom: 22px;
+    }
 }
 @media (min-width: 1300px) {
   .footer-content {
     background: url(img/footer-bg-l.svg) no-repeat;
     
   }
-   .footer-logo-bg {
- 
-
-  } 
+  .footer .footer-logo-bg > picture {
+    top: 105px;
+    left: -35px
+  }
 }

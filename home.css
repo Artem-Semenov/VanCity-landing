@@ -527,22 +527,27 @@ display: none;
     max-width: 1288px;
   }
   .main-first-page-content > img {
-    width: 390px;
-    height: 252px;
+    width: 421px;
+    height: 223px;
   }
   .main-first-page-content {
     background: url(img/main-page-bg-white-l.svg) no-repeat;
   }
   .main-first-page-content > img {
-    bottom: -20px;
-    right: -20px;
+    bottom: 57px;
+    right: 38px;
   }
   .main-first-page-title {
     font-size: 100px;
     line-height: 120px;
     margin-bottom: 92px;
   }
- 
+  .main-first-page-title > h1 > div > span {
+    font-size: 27px;
+  }
+  .main-first-page-title div:last-child {
+    text-align: left;
+  }
   .second-page-content {
     background: url(img/second-page-bg-l.svg) no-repeat;
     padding: 48px 64px 88px 55px;

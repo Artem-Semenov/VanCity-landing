@@ -3,17 +3,14 @@
  */
 
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal", //vertical..
+  direction: "horizontal", 
   // loop: true,
   speed: 500,
-  // If we need pagination
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
@@ -38,7 +35,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 /**
- * PHOTOS SECTION - MOVE ON SCROLL
+ * PHOTOS SECTION - PHOTOS MOOVING ON SCROLL
  */
 
 const photosBlock = document.getElementById("images-block-photos");

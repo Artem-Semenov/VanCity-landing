@@ -332,102 +332,6 @@ width: 2px;
   height: 62px;
   background: #B1DEDB;
 }
-.phone-display-block {
-  display: block;
-}
-
-
-
-
-.slider-content {
-display: flex;
-flex-direction: column;
-position: relative;
-background: url(img/slider-bg-xs.svg) no-repeat;
-padding: 60px 0px 151px 12px;
-}
-.slider-triangle-bg {
- display: none;
-}
-
-.slider-title {
-  padding-right: 12px;
-  margin-bottom: 60px;
-}
-.slider-title > h2 {
-font-weight: 600;
-font-size: 50px;
-line-height: 73px;
-text-transform: uppercase;
-color: #112C41;
-}
-.slider-title > h2 > div > span {
-font-size: 15px;
-line-height: 18px;
-text-transform: uppercase;
-color: rgba(17, 44, 65, 0.5);
-}
-.swiper {
-display: flex;
-flex-direction: column;
-}
-.swiper-scrollbar {
-  margin-right: 12px;
- 
-}
-.swiper-title p {
-font-weight: 500;
-font-size: 14px;
-line-height: 24px;
-text-transform: uppercase;
-color: rgba(17, 44, 65, 0.6);
-margin: 30px 0;
-}
-.swiper-buttons {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-.swiper{
- width: 266px;
- height: 244px;
-}
-.swiper-slide {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 29px;
-  background: #DCF2F2;
-border-radius: 20px;
-
-}
-
-.swiper-slide h3{
-  font-weight: 500;
-font-size: 13px;
-line-height: 16px;
-text-transform: uppercase;
-color: rgba(17, 44, 65, 0.6);
-margin-bottom: -9px;
-
-}
-
-.swiper-slide p{
-font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #1E4357;
-}
-
-.swiper-slide img {
-  align-self: flex-end;
-  width: 40px;
-  height: 40px;
-}
-
 
 
 @media (min-width: 640px) {
@@ -468,10 +372,7 @@ display: none;
     font-size: 27px;
     line-height: 65px;
   }
-  .slider-content {
-    background: url(img/slider-bg-s.svg) no-repeat;
-    }
-   
+
 }
 
 @media (min-width: 1024px) {
@@ -618,16 +519,6 @@ display: none;
     background: #B1DEDB;
   }
 
-  .slider-content {
-
-    background: url(img/slider-bg-m.svg) no-repeat;
-    }
-    .slider-triangle-bg {
-     display: block;
-     position: absolute;
-     bottom: 0;
-     right: 0;
-    }
 
 
 }
@@ -684,9 +575,6 @@ line-height: 30px;
     margin-bottom: 55px;
   }
 
-  .slider-content {
 
-    background: url(img/slider-bg-l.svg) no-repeat;
-    }
 
 }

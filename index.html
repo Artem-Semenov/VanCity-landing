@@ -203,20 +203,23 @@
       <section class="slider">
         <div class="container">
           <div class="slider-content">
-            <img
-              class="slider-triangle-bg"
-              src="img/slider-triangle-bg-l.svg"
-              alt=""
-            />
+            <picture class="slider-triangle-bg">
+              <source
+                srcset="img/slider-triangle-bg-l.svg"
+                width="(min-width: 1300px)"
+              />
+              <img src="img/slider-triangle-bg-m.svg" alt="bg" />
+            </picture>
+
             <div class="slider-title">
               <h2>
-                <div>
-                  <span> Our </span>pride
+                <div class="pad-l-100-desktop">
+                  <span class="pr-10"> Our </span>pride
                   <span> in our work </span>
                 </div>
-                <div>
-                  separates
-                  <span> in our </span>
+                <div class="tablet-txt-al-cent">
+                  separates <br class="m-display-none" />
+                  <span class="pr-10 tablet-ml-135"> in our </span>
                   industry
                 </div>
               </h2>
@@ -240,7 +243,7 @@
                     </p>
                     <img src="img/slide-img-1.svg" alt="icon" />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide slide2">
                     <h3>Nomic capital</h3>
                     <p>
                       — We highly appreciate the solution given for its
@@ -249,14 +252,19 @@
                     </p>
                     <img src="img/slide-img-2.svg" alt="icon" />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide slide3">
                     <h3>Kotska builds</h3>
                     <p>
                       — Our vision, brief, and objectives were taken into
                       account by the FFFACE team, resulting in prompt project
                       delivery executed with the highest standards.
                     </p>
-                    <img src="img/slide-img-3.svg" alt="icon" />
+                    <img
+                      src="img/slide-img-3.svg"
+                      alt="icon"
+                      width="36px"
+                      height="28px"
+                    />
                   </div>
                 </div>
               </div>
@@ -264,6 +272,152 @@
           </div>
         </div>
       </section>
+      <sectopn class="images-block">
+        <div class="container">
+          <div class="images-block-content">
+            <img
+              class="images-block-triangle-bg"
+              src="img/images-section-triangle-bg-xs.svg"
+              alt="bg"
+            />
+            <div class="images-block-title">
+              <h2>Ready for a new project?</h2>
+              <button class="contact-us-button">contact us</button>
+            </div>
+            <div class="images-block-photos" id="images-block-photos">
+              <div class="mooving-block order-4">
+                <picture>
+                  <source
+                    srcset="img/images-block-img-1.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-1-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-1-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-1-xs.png" alt="" />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="img/images-block-img-2.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-2-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-2-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-2-xs.png" alt="" />
+                </picture>
+              </div>
+              <div class="static-block">
+                <picture>
+                  <source
+                    srcset="img/images-block-img-3.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-3-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-3-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-3-xs.png" alt="" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="img/images-block-img-4.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-4-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-4-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-4-xs.png" alt="" />
+                </picture>
+              </div>
+              <div class="mooving-block order-2">
+                <picture>
+                  <source
+                    srcset="img/images-block-img-5.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-5-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-5-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-5-xs.png" alt="" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="img/images-block-img-6.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-6-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-6-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-6-xs.png" alt="" />
+                </picture>
+              </div>
+              <div class="static-block">
+                <picture>
+                  <source
+                    srcset="img/images-block-img-7.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-7-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-7-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-7-xs.png" alt="" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="img/images-block-img-8.png"
+                    media="(min-width: 1300px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-8-m.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="img/images-block-img-8-s.png"
+                    media="(min-width: 640px)"
+                  />
+                  <img src="img/images-block-img-8-xs.png" alt="" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sectopn>
     </main>
 
     <footer class="footer">
@@ -332,7 +486,7 @@
         </div>
         <div class="footer-privacy-policy">
           <div>© 2022</div>
-          <div>Privacy Policy</div>
+          <div><a href="">Privacy Policy</a></div>
         </div>
       </div>
     </footer>

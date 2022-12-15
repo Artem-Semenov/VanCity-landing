@@ -1,9 +1,105 @@
 /**
+ * THIRD PAGE HORIZONTAL SLIDER
+ */
+
+const sliderWrapper = document.getElementById("fixed-slider-wrapper");
+
+const sliderWrapperHeight = sliderWrapper.offsetHeight;
+
+const drug = document.getElementById("slider-drug");
+
+const moovingIndex = null;
+
+const sliderLine = document.getElementById('slider-line');
+
+const paragraphs = document.querySelectorAll('.lighten-text')
+
+const sliderDrugLine = document.getElementById('slider-drug-line')
+
+
+const sliderContentBlock = document.getElementById('third-page-bottom-content');
+
+const firstBlock = document.getElementById('slider-block-1')
+
+const activeTextDelimeter = window.innerWidth / 2;
+
+let numberDelta;
+let drugNumberDelimeter;
+let numberDelimeter;
+let moveDrugDelimeter;
+
+ if (window.innerWidth < 641) {
+  numberDelimeter = 3.3;
+  moveDrugDelimeter = 8.4
+}
+else if (window.innerWidth < 1025) {
+  numberDelimeter = 2;
+  moveDrugDelimeter = 4.1
+}
+else if (window.innerWidth < 1300) {
+
+  numberDelimeter = 1.35;
+  moveDrugDelimeter = 2.5
+}
+else  {
+
+  numberDelimeter = 1.2;
+  moveDrugDelimeter = 2.15
+} 
+
+numberDelta = sliderContentBlock.offsetWidth - firstBlock.offsetWidth
+drugNumberDelimeter = sliderWrapperHeight / (sliderDrugLine.offsetWidth - drug.offsetWidth);
+
+
+let number;
+let drugNumber;
+
+// console.log(numberDelta, drugNumberDelimeter, numberDelimeter);
+
+
+document.addEventListener("scroll", function (e) {
+  let blockPosition = sliderWrapper.getBoundingClientRect().top
+  // console.log(blockPosition);
+  if (blockPosition > 0)  {
+    console.log('we are before slider');  
+    number = numberDelta;
+    drugNumber = 0;
+ }
+ else if (blockPosition < -(sliderWrapperHeight - sliderWrapperHeight /4)) {
+  console.log('We are under slider');
+  drugNumber = -(sliderWrapperHeight / drugNumberDelimeter);
+  number = numberDelta -(sliderWrapperHeight / numberDelimeter)
+ } else {
+ drugNumber = blockPosition / moveDrugDelimeter
+ number = blockPosition / (numberDelimeter - 0.3) + numberDelta
+ }
+ 
+// console.log(number);
+sliderLine.style.left = `${number}px`;
+drug.style.marginLeft =`${-drugNumber}px`
+
+if (number > numberDelta - activeTextDelimeter) {
+paragraphs.forEach(el => el.classList.remove('active'))
+paragraphs[0].classList.add('active')
+}else if (number > -activeTextDelimeter) {
+paragraphs.forEach(el => el.classList.remove('active'))
+paragraphs[1].classList.add('active')
+} else if (number > -activeTextDelimeter * 2) {
+paragraphs.forEach(el => el.classList.remove('active'))
+paragraphs[2].classList.add('active')
+}else  {
+paragraphs.forEach(el => el.classList.remove('active'))
+paragraphs[3].classList.add('active')
+}
+// console.log(paragraphs);
+
+});
+/**
  * SLIDER
  */
 
 const swiper = new Swiper(".swiper", {
-  direction: "horizontal", 
+  direction: "horizontal",
   // loop: true,
   speed: 500,
   navigation: {
@@ -49,7 +145,6 @@ const delimeter = blockHeight / deviceDelta;
 
 document.addEventListener("scroll", function (e) {
   let blockPosition = photosBlock.getBoundingClientRect().top;
-  console.log(blockPosition);
   num = blockPosition;
   if (blockPosition > blockHeight) {
     num = blockHeight;
@@ -60,3 +155,30 @@ document.addEventListener("scroll", function (e) {
     (el) => (el.style.top = `${deviceDelta - num / delimeter}px`)
   );
 });
+
+
+/** 
+ * SMOOTH SCROLL
+ */
+class SmoothAnchorScroll {
+  init() {
+    const anchors = document.querySelectorAll('a[href^="#"]');
+
+    for (const anchor of anchors) {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    }
+  }
+}
+
+const smoothAnchorScroll = new SmoothAnchorScroll();
+smoothAnchorScroll.init();

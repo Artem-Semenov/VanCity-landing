@@ -106,7 +106,11 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
+// freeMode: true,
+/* mousewheel: {
+  releaseOnEdges: true,
+  eventsTarget: ".slider"
+}, */
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,

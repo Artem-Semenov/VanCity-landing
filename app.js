@@ -23,21 +23,145 @@ const firstBlock = document.getElementById('slider-block-1')
 
 const activeTextDelimeter = window.innerWidth / 2;
 
+
+const header = document.getElementById('header')
+
 let numberDelta;
 let drugNumberDelimeter;
 let numberDelimeter;
 let moveDrugDelimeter;
 let index;
- if (window.innerWidth < 641) {
+/*  if (window.innerWidth < 641) {
   index = 0.85           //sliderLine speed index
   numberDelimeter = 3.4; // default sliderLine move Index
   moveDrugDelimeter = 8.4 // Drug move index
 }
-else if (window.innerWidth < 1024) {
-  index = 0.5
-  numberDelimeter = 2;
-  moveDrugDelimeter = 4.1
+else */ 
+
+let firstSwiper;
+
+
+firstSwiper = new Swiper(".third-page-slider-line", {
+    direction: "horizontal",
+    // loop: true,
+    speed: 500,
+    freeMode:  {
+      enabled: true,
+      momentumRatio: 1,
+      momentumBounce: true,
+      momentumBounceRatio: 10,
+      momentumVelocityRatio: 1,
+      momentum: true,
+
+    },
+
+    mousewheel: {
+      releaseOnEdges: true,
+      sensitivity: 0.5,
+      eventsTarget: ".block-with-decor"
+    },
+  /* mousewheel: {
+    releaseOnEdges: true,
+    eventsTarget: ".slider"
+  }, */
+  grabCursor: true,
+    scrollbar: {
+      el: ".third-page-slider-scrollbar",
+      draggable: true,
+   
+    },
+    
+    slidesPerView: 1.23,
+    slideToClickedSlide: true,
+    centeredSlides: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.8,
+      },
+      640: {
+      },
+      1024: {
+       
+        centeredSlides: true,
+        slidesPerView: 2,
+       
+      },
+    },
+  });
+
+   firstSwiper.on('activeIndexChange', function(e) {
+  // console.log(sliderWrapper.getBoundingClientRect().top, window.scrollY);
+    let index = firstSwiper.activeIndex;
+    console.log(index);
+    
+    if (index === 0 && !isInView(document.getElementById('trigger-1'))) {
+      document.getElementById('trigger-1').scrollIntoView()
+    } else if (index === 1 && !isInView(document.getElementById('trigger-2'))) {
+      document.getElementById('trigger-2').scrollIntoView()
+    } else if (index === 2 && !isInView(document.getElementById('trigger-3')) ) {
+      document.getElementById('trigger-3').scrollIntoView()
+    } else if( index === 3 && !isInView(document.getElementById('trigger-4'))) {
+      document.getElementById('trigger-4').scrollIntoView()
+
+    }
+
+    
+  })
+ 
+
+  function isInView(el) {
+    let bounding = el.getBoundingClientRect();
+    if (
+      bounding.top >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+      return true
+    }
+    else return false;
+  }
+ 
+
+/* if (window.innerWidth > 1024) { */
+
+  document.addEventListener('scroll', function(e) {
+   let blockPosition = sliderWrapper.getBoundingClientRect().top
+    //determine slider position
+   if (blockPosition < 0 && blockPosition > -sliderWrapperHeight) {
+ header.classList.add('hide') 
+} 
+ else {
+  header.classList.remove('hide') 
+ }
+
+if(isInView(document.getElementById('trigger-1'))) {
+  firstSwiper.slideTo(0, 1000)
+  // console.log('We have reached first trigger');
+} else if(isInView(document.getElementById('trigger-2')))  {
+  firstSwiper.slideTo(1, 1000)
+  // console.log('We have reached second trigger');
+}else if(isInView(document.getElementById('trigger-3')))  {
+  firstSwiper.slideTo(2, 1000)
+  // console.log('We have reached third trigger');
+}else if(isInView(document.getElementById('trigger-4')))  {
+  firstSwiper.slideTo(3,1000)
+  // console.log('We have reached fourth trigger');
 }
+
+/*    let blockPosition = sliderWrapper.getBoundingClientRect().top
+   //determine slider position
+  if (blockPosition < 0 && blockPosition > -sliderWrapperHeight) {
+header.classList.add('hide')
+// console.log('We are in slider');
+blockPosition > - (sliderWrapperHeight / 8) ? firstSwiper.slideTo(0, 1000) :
+blockPosition > - (sliderWrapperHeight / 3) ? firstSwiper.slideTo(1, 1000) :
+blockPosition > - (sliderWrapperHeight / 1.5) ? firstSwiper.slideTo(2, 1000) :
+firstSwiper.slideTo(3,1000);
+  } else {
+    header.classList.remove('hide')
+  }
+  }) */
+  })
+/* 
 else if (window.innerWidth < 1300) {
   index = 0.3
   numberDelimeter = 1.35;
@@ -93,7 +217,7 @@ paragraphs[3].classList.add('active')
 }
 // console.log(paragraphs);
 
-});
+}); */
 /**
  * SLIDER
  */
@@ -155,6 +279,7 @@ document.addEventListener("scroll", function (e) {
   } else if (blockPosition < 0) {
     num = 1;
   }
+  // console.log(firstSwiper.activeIndex);
   moovingBlocks.forEach(
     (el) => (el.style.top = `${deviceDelta - num / delimeter}px`)
   );
@@ -195,3 +320,4 @@ const button = document.getElementById('burger-button')
 button.addEventListener('click', function(e) {
 
 })
+

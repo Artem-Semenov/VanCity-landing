@@ -10,6 +10,7 @@
   font-family: 'Space Grotesk';
 height: auto;
 width: auto;
+transition: all ease 0.4s;
 }
 
 .header-content {
@@ -444,6 +445,10 @@ color: #112C41;
   position: relative;
   /* top: 70px; */
   transition: all ease 0.3s;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 640px) {
   .header-contact-us button {

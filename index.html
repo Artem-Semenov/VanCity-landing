@@ -22,7 +22,7 @@
     <title>VanCity</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header-content">
           <div class="logo">
@@ -210,6 +210,22 @@
               <div>Mark <span class="ml-30">of</span> Distinction</div>
             </h2>
             <div class="fixed-slider-wrapper" id="fixed-slider-wrapper">
+             
+                <div class="triggers">
+                  <div class="trigger-box">
+                    <div class="trigger" id="trigger-1"></div>
+                  </div>
+                  <div class="trigger-box">
+                    <div class="trigger" id="trigger-2"></div>
+                  </div>
+                  <div class="trigger-box">
+                    <div class="trigger" id="trigger-3"></div>
+                  </div>
+                  <div class="trigger-box height-90-vh">
+                    <div class="trigger" id="trigger-4"></div>
+                  </div>
+                </div>
+              
               <div class="fixed-slider-content">
                 <div class="third-page-features">
                   <div class="block-with-decor">
@@ -231,32 +247,35 @@
                   class="third-page-bottom-content"
                   id="third-page-bottom-content"
                 >
-                  <div class="third-page-bottom-decor" id="slider-drug-line">
+                  <!-- <div class="third-page-bottom-decor" id="slider-drug-line">
                     <div id="slider-drug"></div>
-                  </div>
+                  </div> -->
+                  <div class="swiper-scrollbar third-page-slider-scrollbar"></div>
                   <div class="third-page-slider-line" id="slider-line">
-                    <div class="flex-wrap" id="slider-block-1">
+                    <div class="swiper-wrapper">
+                    <div class="flex-wrap swiper-slide" id="slider-block-1">
                       <div>01</div>
                       <p class="lighten-text active">
                         A detailed, accurate plan for the build
                       </p>
                     </div>
-                    <div class="flex-wrap">
+                    <div class="flex-wrap swiper-slide">
                       <div>02</div>
                       <p class="lighten-text">
                         Accelerate subcontractor onboarding
                       </p>
                     </div>
-                    <div class="flex-wrap">
+                    <div class="flex-wrap swiper-slide">
                       <div>03</div>
                       <p class="lighten-text">Use of the latest technologies</p>
                     </div>
-                    <div class="flex-wrap">
+                    <div class="flex-wrap swiper-slide">
                       <div>04</div>
                       <p class="lighten-text">
                         Exceptional attention to detail
                       </p>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -267,14 +286,6 @@
       <section class="slider">
         <div class="container">
           <div class="slider-content">
-           <!--  <picture class="slider-triangle-bg">
-              <source
-                srcset="img/slider-triangle-bg-l.svg"
-                width="(min-width: 1300px)"
-              />
-              <img src="img/slider-triangle-bg-m.svg" alt="bg" />
-            </picture>
- -->
             <div class="slider-title">
               <h2>
                 <div class="pad-l-100-desktop">
@@ -370,7 +381,6 @@
       <section class="images-block">
         <div class="container">
           <div class="images-block-content">
-           
             <div class="images-block-title">
               <h2>Ready for a new project?</h2>
               <button class="contact-us-button">contact us</button>

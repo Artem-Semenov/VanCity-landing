@@ -27,22 +27,24 @@ let numberDelta;
 let drugNumberDelimeter;
 let numberDelimeter;
 let moveDrugDelimeter;
-
+let index;
  if (window.innerWidth < 641) {
-  numberDelimeter = 3.3;
-  moveDrugDelimeter = 8.4
+  index = 0.85           //sliderLine speed index
+  numberDelimeter = 3.4; // default sliderLine move Index
+  moveDrugDelimeter = 8.4 // Drug move index
 }
-else if (window.innerWidth < 1025) {
+else if (window.innerWidth < 1024) {
+  index = 0.5
   numberDelimeter = 2;
   moveDrugDelimeter = 4.1
 }
 else if (window.innerWidth < 1300) {
-
+  index = 0.3
   numberDelimeter = 1.35;
   moveDrugDelimeter = 2.5
 }
 else  {
-
+  index = 0.3
   numberDelimeter = 1.2;
   moveDrugDelimeter = 2.15
 } 
@@ -54,12 +56,10 @@ drugNumberDelimeter = sliderWrapperHeight / (sliderDrugLine.offsetWidth - drug.o
 let number;
 let drugNumber;
 
-// console.log(numberDelta, drugNumberDelimeter, numberDelimeter);
 
 
 document.addEventListener("scroll", function (e) {
   let blockPosition = sliderWrapper.getBoundingClientRect().top
-  // console.log(blockPosition);
   if (blockPosition > 0)  {
     console.log('we are before slider');  
     number = numberDelta;
@@ -71,7 +71,7 @@ document.addEventListener("scroll", function (e) {
   number = numberDelta -(sliderWrapperHeight / numberDelimeter)
  } else {
  drugNumber = blockPosition / moveDrugDelimeter
- number = blockPosition / (numberDelimeter - 0.3) + numberDelta
+ number = blockPosition / (numberDelimeter - index) + numberDelta
  }
  
 // console.log(number);
@@ -182,3 +182,12 @@ class SmoothAnchorScroll {
 
 const smoothAnchorScroll = new SmoothAnchorScroll();
 smoothAnchorScroll.init();
+
+/** 
+ * MOBILE BURGER
+ */
+const button = document.getElementById('burger-button')
+
+button.addEventListener('click', function(e) {
+
+})

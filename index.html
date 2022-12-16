@@ -22,7 +22,7 @@
     <title>VanCity</title>
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header">
       <div class="container">
         <div class="header-content">
           <div class="logo">
@@ -40,13 +40,13 @@
           </nav>
           <div class="header-contact-us">
             <button>CONTACT US</button>
-            <div class="mobile-burger-button"></div>
+            <button class="mobile-burger-button" id="burger-button"></button>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="main-first-page">
+      <section class="main-first-page" id="top">
         <div class="container">
           <div class="main-first-page-content">
             <img src="img/main-page-img.png" alt="photo" />
@@ -204,7 +204,6 @@
       <section class="third-page">
         <div class="container">
           <div class="third-page-content">
-           
             <h2 class="mobile-display-none">
               <div><span>our</span>Professionalism <span>is Our</span></div>
               <br class="display-m" />
@@ -215,7 +214,8 @@
                 <div class="third-page-features">
                   <div class="block-with-decor">
                     <div class="third-page-decor"></div>
-                    Features</div>
+                    Features
+                  </div>
                   <p>
                     Knowledge and expertise are abundant on our VanCity Drafting
                     team. We take great pride in the work we do with our
@@ -227,18 +227,25 @@
                     our:
                   </p>
                 </div>
-                <div class="third-page-bottom-content" id="third-page-bottom-content">
+                <div
+                  class="third-page-bottom-content"
+                  id="third-page-bottom-content"
+                >
                   <div class="third-page-bottom-decor" id="slider-drug-line">
-                    <div  id="slider-drug"></div>
+                    <div id="slider-drug"></div>
                   </div>
                   <div class="third-page-slider-line" id="slider-line">
                     <div class="flex-wrap" id="slider-block-1">
                       <div>01</div>
-                      <p class="lighten-text active">A detailed, accurate plan for the build</p>
+                      <p class="lighten-text active">
+                        A detailed, accurate plan for the build
+                      </p>
                     </div>
                     <div class="flex-wrap">
                       <div>02</div>
-                      <p class="lighten-text">Accelerate subcontractor onboarding </p>
+                      <p class="lighten-text">
+                        Accelerate subcontractor onboarding
+                      </p>
                     </div>
                     <div class="flex-wrap">
                       <div>03</div>
@@ -246,7 +253,9 @@
                     </div>
                     <div class="flex-wrap">
                       <div>04</div>
-                      <p class="lighten-text">Exceptional attention to detail</p>
+                      <p class="lighten-text">
+                        Exceptional attention to detail
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -521,7 +530,7 @@
               />
             </picture>
           </div>
-          <a href="#header" class="footer-arrow-up">
+          <a href="#top" class="footer-arrow-up">
             <picture>
               <source
                 srcset="img/footer-arrow-up.svg"
@@ -544,6 +553,34 @@
         </div>
       </div>
     </footer>
+    <svg class="svg">
+      <clipPath id="desktop-top-left" clipPathUnits="objectBoundingBox">
+        <path
+          d="M0,0 V1 C0,1,0.01,0.919,0.036,0.874 C0.049,0.852,0.076,0.821,0.076,0.821 L0.815,0.078 C0.831,0.063,0.856,0.044,0.874,0.034 C0.934,0,1,0,1,0 H0"
+        ></path>
+      </clipPath>
+    </svg>
+    <svg class="svg">
+      <clipPath id="desktop-bottom-right" clipPathUnits="objectBoundingBox">
+        <path
+          d="M0.067,0.972 C0.049,0.99,0.025,1,0,1 H1 V0 C1,0.025,0.99,0.049,0.972,0.067 L0.067,0.972"
+        ></path>
+      </clipPath>
+    </svg>
+    <svg class="svg">
+      <clipPath id="mobile-top-left" clipPathUnits="objectBoundingBox">
+        <path
+          d="M0,0 V1 C0,1,0.016,0.862,0.059,0.787 C0.086,0.739,0.147,0.676,0.147,0.676 L0.684,0.14 C0.684,0.14,0.742,0.084,0.787,0.059 C0.862,0.016,1,0,1,0 H0"
+        ></path>
+      </clipPath>
+    </svg>
+    <svg class="svg">
+      <clipPath id="mobile-bottom-right" clipPathUnits="objectBoundingBox">
+        <path
+          d="M0.111,0.968 C0.071,0.992,0.024,1,0,1 H1 V0 C1,0.028,0.988,0.087,0.964,0.107 L0.111,0.968"
+        ></path>
+      </clipPath>
+    </svg>
     <script src="app.js"></script>
   </body>
 </html>

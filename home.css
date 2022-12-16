@@ -12,7 +12,6 @@
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 html,body{
-	height: 100%;
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
@@ -39,23 +38,56 @@ body {
   font-weight: 600;
 }
 .container {
-  max-width: 356px;
   padding: 0px 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main {
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
-.main-first-page {
-}
+
 
 .main-first-page-content {
   position: relative;
 padding: 64px 12px 230px 12px;
- background: url(img/main-page-bg-white-xs.svg) no-repeat; 
+ /* background: url(img/main-page-bg-white-xs.svg) no-repeat;  */
+ background: #fff;
+ border-top-left-radius: 75px;
+ border-bottom-right-radius: 135px;
+ /* clip-path: polygon(0% 99%, 76% 100%, 79% 99%, 82% 98%, 84% 96%, 97% 86%, 97% 84%, 98% 81%, 100% 76%, 99% 0%, 23% 0%, 21% 1%, 19% 2%, 16% 4%, 4% 14%, 2% 16%, 1% 18%, 0% 22%); */
+
 }
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.main-first-page-content:before {
+  content: '';
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #112C41;
+  background-size: cover;
+  -webkit-clip-path: url(#mobile-top-left);
+  clip-path: url(#mobile-top-left);
+}
+.main-first-page-content::after {
+  content: '';
+  width: 126px;
+  height: 126px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #112C41;
+  background-size: cover;
+  -webkit-clip-path: url(#mobile-bottom-right);
+  clip-path: url(#mobile-bottom-right);
+} 
+
 .main-first-page-title {
 font-family: 'Bai Jamjuree';
 font-weight: 600;
@@ -120,7 +152,6 @@ color: #B1DEDB;
 .sub-main-content {
 display: flex;
 flex-wrap: wrap;
-margin: 0 -10px;
 }
 .sub-main-content >div:last-child {
   padding-top: 48px;
@@ -192,6 +223,7 @@ color: rgba(177, 222, 219, 0.6);
   padding: 59px 21px 21px 12px;
   position: relative;
   z-index: 1;
+ 
 }
 .second-page-content > h2, .third-page-content > h2 {
   font-family: 'Bai Jamjuree';
@@ -411,9 +443,7 @@ width: 180px;
 .flex-wrap > p.active {
   opacity: 1;
 }
-.flex-wrap .light-text {
 
-}
 .fixed-slider-wrapper {
   height: 400vh;
   }
@@ -424,7 +454,6 @@ width: 180px;
   .third-page-slider-line {
 position: relative;
 left: 150px;
-transition: all ease 0.3s;
   }
 @media (min-width: 640px) {
   .container {
@@ -438,12 +467,10 @@ display: none;
  }
   .main-first-page-content {
     margin: 0 -10px;
-    background: url(img/main-page-bg-white-s.svg) no-repeat; 
+    /* background: url(img/main-page-bg-white-s.svg) no-repeat;  */
+
   }
-  .main-first-page-content > img {
-  /*   bottom: -60px;
-    right: -20px; */
-  }
+
   .main-first-page-title {
     font-size: 46px;
     line-height: 54px;
@@ -491,11 +518,23 @@ width: 270px;
     gap: 60px;
   }
   .third-page-slider-line{
-    left: 350px;
+    left: 328px;
   }
 }
 
 @media (min-width: 1024px) {
+  .main-first-page-content:before {
+    width: 112px;
+    height: 112px;
+    -webkit-clip-path: url(#desktop-top-left);
+    clip-path: url(#desktop-top-left);
+  }
+  .main-first-page-content::after {
+    width: 212px;
+    height: 212px;
+    -webkit-clip-path: url(#desktop-bottom-right);
+    clip-path: url(#desktop-bottom-right);
+  } 
   .mobile-display-none {
 display: block;
   }
@@ -506,13 +545,14 @@ display: block;
     max-width: 990px;
   }
   .main {
-    margin-top: 24px;
+   margin-top: 8px; 
   }
  
   .main-first-page-content {
      padding: 48px 15px 107px 64px;
-    background: url(img/main-page-bg-white-m.svg) no-repeat;
-   
+     border-top-left-radius: 120px;
+     border-bottom-right-radius: 225px;
+    /* background: url(img/main-page-bg-white-m.svg) no-repeat; */ 
   }
   .main-first-page-title {
     font-size: 80px;
@@ -679,11 +719,13 @@ display: block;
 }
 .third-page-slider-line {
   left: 457px;
+transition: all ease 0.3s;
+
 }
 .fixed-slider-content {
   top: 30px;
 }
-.third-page-bottom-content > div {}
+
 }
 @media (min-width: 1300px) {
   .container {
@@ -694,7 +736,7 @@ display: block;
     height: 223px;
   }
   .main-first-page-content {
-    background: url(img/main-page-bg-white-l.svg) no-repeat;
+    /* background: url(img/main-page-bg-white-l.svg) no-repeat; */
   }
   .main-first-page-content > img {
     bottom: 57px;
@@ -753,10 +795,7 @@ line-height: 30px;
     width: 1160px;
 
   }
-  .third-page-bottom-decor > div {
  
-
-}
 .third-page-bottom-content {
   gap: 98px;
 }
@@ -779,4 +818,5 @@ line-height: 30px;
 .fixed-slider-content {
   top: 100px;
 }
+
 }

@@ -357,6 +357,7 @@ line-height: 17px;
 
 .swiper-slide img {
   align-self: flex-end;
+  margin-top: auto;
   display: block;
   width: 43px;
   height: 43px;
@@ -378,13 +379,15 @@ line-height: 17px;
 
 
 .images-block-content {
- border-top-right-radius: 20px;
- border-bottom-left-radius: 20px;
+ 
+border-bottom-left-radius: 20px;
 margin-top: -180px;
   position: relative;
 padding: 260px 12px 0px 12px;
 background: #0B2030;
-  overflow: hidden;
+  /* overflow: hidden; */
+  border-bottom-right-radius: 135px;
+ 
 }
 
 
@@ -424,6 +427,9 @@ color: #112C41;
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
+  border-bottom-right-radius: 135px;
+  border-bottom-left-radius: 20px;
 }
 .images-block-photos div {
   display: flex;
@@ -431,7 +437,9 @@ color: #112C41;
   gap: 8px;
   justify-content: flex-start;
 }
-
+.images-block-photos div img{
+  border-radius: 20px;
+}
 .order-4 {
   order: 4;
 }
@@ -650,6 +658,7 @@ right: 0px;
 }
 .images-block-content {
   padding: 260px 0px 0px 0px;
+  border-bottom-right-radius: 225px;
 }
 .images-block-photos {
   gap: 11px;
@@ -696,6 +705,9 @@ right: 0px;
   border-top-left-radius: 120px;
   border-bottom-right-radius: 225px;
 }
+.images-block-photos {
+  border-bottom-right-radius: 225px;
+}
 }
 @media (min-width: 1300px) {
   .footer-content {
@@ -703,7 +715,7 @@ right: 0px;
     
   }
   .footer .footer-logo-bg > picture {
-    top: 105px;
+    top: 108px;
     left: -35px
   }
   .slider-content {

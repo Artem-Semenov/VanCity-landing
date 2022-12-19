@@ -39,7 +39,7 @@
             </ul>
           </nav>
           <div class="header-contact-us">
-            <button>CONTACT US</button>
+            <button class="contact-button">CONTACT US</button>
             <button class="mobile-burger-button" id="burger-button"></button>
           </div>
         </div>
@@ -53,19 +53,19 @@
             <div class="main-first-page-title">
               <h1>
                 <div>
-                  <span class="phone-display-block">The primer</span>
+                  <span class="phone-display-block desktop-mr-5">The primer</span>
                   architectural
                 </div>
                 <div>
                   visualization <br class="display-phone" />
-                  <span class="leaf-bg phone-display-block"
+                  <span class="leaf-bg phone-display-block desktop-ml-5"
                     >from Vancouver BC
                   </span>
                 </div>
               </h1>
             </div>
             <div class="main-page-text">
-              <button>Contact us</button>
+              <button class="contact-button">Contact us</button>
               <p>
                 Residential & Commercial As-Built Drawings, Architectural
                 Drafting, and 3D Rendering Services. Supporting the Entirety of
@@ -83,7 +83,11 @@
               <div>Achievements</div>
             </div>
             <div class="sub-main-block">
-              <img src="img//achievements-icon-1.svg" alt="" />
+              <picture>
+              <source srcset="img/achievements-icon-1.svg" media="(min-width: 1024px)" width="32px" height="32px">
+              <img src="img/achievements-icon-1.svg" alt="icon" width="26px" height="26px"/>  
+            </picture>
+              
               <div>
                 <p>120</p>
                 <div class="decorated-block">
@@ -92,8 +96,12 @@
                 </div>
               </div>
             </div>
-            <div class="sub-main-block">
-              <img src="img//achievements-icon-2.svg" alt="" />
+            <div class="sub-main-block order-4">
+              <picture>
+                <source srcset="img/achievements-icon-2.svg" media="(min-width: 1024px)" width="32px" height="32px">
+                <img src="img/achievements-icon-2.svg" alt="icon" width="26px" height="26px"/>  
+              </picture>
+                
               <div>
                 <p>5+</p>
                 <div class="decorated-block">
@@ -102,8 +110,12 @@
                 </div>
               </div>
             </div>
-            <div class="sub-main-block">
-              <img src="img//achievements-icon-3.svg" alt="" />
+            <div class="sub-main-block order-3">
+              <picture>
+                <source srcset="img/achievements-icon-3.svg" media="(min-width: 1024px)" width="32px" height="32px">
+                <img src="img/achievements-icon-3.svg" alt="icon" width="26px" height="26px"/>  
+              </picture>
+                
               <div>
                 <p>32K</p>
                 <div class="decorated-block">
@@ -126,9 +138,9 @@
               </div>
             </div>
             <h2>
-              <div>Supporting <span>the</span></div>
+              <div>Supporting <span class="mr-5"><br class="mobile-display"> the</span></div>
               <br class="display-m" />
-              <div>Entirety <span class="ml-30">of your</span> needs</div>
+              <div>Entirety <br class="mobile-display"> <span class="ml-52">of your</span> needs</div>
             </h2>
             <div class="second-page-services">
               <div>Services</div>
@@ -137,7 +149,7 @@
                 of your project, residentially or commercially, we operate as a
                 “one-stop shop.”
               </p>
-              <p>
+              <p class="pt-4">
                 Our team of experts service residential and commercial clients
                 with all of the below services:
               </p>
@@ -157,12 +169,11 @@
                 <p>Architectural Drafting</p>
               </div>
               <div class="second-page-photos-wrapper">
-                <picture
-                  srcset="img/second-page-img-1.png"
+                <picture>
+                  <source  srcset="img/second-page-img-1.png"
                   media="(min-width: 1024px)"
                   width="194px"
-                  height="120px"
-                >
+                  height="120px">
                   <img
                     src="img/second-page-img-1-s.png"
                     alt="Photo"
@@ -170,12 +181,12 @@
                     height="97px"
                   />
                 </picture>
-                <picture
+                <picture>
+                  <source 
                   srcset="img/second-page-img-2.png"
                   media="(min-width: 1024px)"
                   width="387px"
-                  height="238px"
-                >
+                  height="238px">
                   <img
                     src="img/second-page-img-2-s.png"
                     alt="Photo"
@@ -183,12 +194,12 @@
                     height="192px"
                   />
                 </picture>
-                <picture
+                <picture>
+                  <source 
                   srcset="img/second-page-img-3.png"
                   media="(min-width: 1024px)"
                   width="194px"
-                  height="120px"
-                >
+                  height="120px">
                   <img
                     src="img/second-page-img-3-s.png"
                     alt="Photo"
@@ -231,12 +242,12 @@
                     <div class="third-page-decor"></div>
                     Features
                   </div>
-                  <p>
+                  <p class="pl-8">
                     Knowledge and expertise are abundant on our VanCity Drafting
                     team. We take great pride in the work we do with our
                     clients.
                   </p>
-                  <p>
+                  <p class="pl-8 pt-4">
                     That pride is how we have been able to become the premier
                     drafting choice in Vancouver, BC. We separate ourselves with
                     our:
@@ -291,11 +302,11 @@
               <h2>
                 <div class="pad-l-100-desktop">
                   <span class="pr-10"> Our </span>pride
-                  <span> in our work </span>
+                  <span class="pl-10"> in our work </span>
                 </div>
                 <div class="tablet-txt-al-cent">
                   separates <br class="m-display-none" />
-                  <span class="pr-10 tablet-ml-135"> in our </span>
+                  <span class="pr-10 tablet-ml-135 ml-10"> in our </span>
                   industry
                 </div>
               </h2>
@@ -317,7 +328,11 @@
                       — The company provides full expertise from idea to
                       execution.
                     </p>
-                    <img src="img/slide-img-1.svg" alt="icon" />
+                    <picture>
+                      <source srcset="img/slide-img-1.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-1.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
+                
                   </div>
                   <div class="swiper-slide slide2">
                     <h3>Nomic capital</h3>
@@ -326,7 +341,10 @@
                       creativity, user-friendly design, cost-efficiency and
                       short development time.
                     </p>
-                    <img src="img/slide-img-2.svg" alt="icon" />
+                    <picture>
+                      <source srcset="img/slide-img-2.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-2.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
                   </div>
                   <div class="swiper-slide slide3">
                     <h3>Kotska builds</h3>
@@ -335,12 +353,10 @@
                       account by the FFFACE team, resulting in prompt project
                       delivery executed with the highest standards.
                     </p>
-                    <img
-                      src="img/slide-img-3.svg"
-                      alt="icon"
-                      width="36px"
-                      height="28px"
-                    />
+                    <picture>
+                      <source srcset="img/slide-img-3.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-3.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
                   </div>
                   <div class="swiper-slide">
                     <h3>Oakwyn Realty Ltd.</h3>
@@ -350,7 +366,10 @@
                       answer any questions, the quality of work is excellent and
                       delivered when promised. I will definitely use them again.
                     </p>
-                    <img src="img/slide-img-1.svg" alt="icon" />
+                    <picture>
+                      <source srcset="img/slide-img-1.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-1.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
                   </div>
                   <div class="swiper-slide slide2">
                     <h3>First Stay Realty Inc.</h3>
@@ -361,22 +380,23 @@
                       knowledge and expertise of usable calculations. They do a
                       great job every time, we will keep working with them
                     </p>
-                    <img src="img/slide-img-2.svg" alt="icon" />
+                    <picture>
+                      <source srcset="img/slide-img-2.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-2.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
                   </div>
                   <div class="swiper-slide slide3">
                     <h3>EJ Interiors</h3>
                     <p>
-                      — "Due to your quick response and professionalism we are
+                      — Due to your quick response and professionalism we are
                       always able to meet our deadlines and maintain a high
                       level of production. Thanks again and I look forward to
                       working with you again.
                     </p>
-                    <img
-                      src="img/slide-img-3.svg"
-                      alt="icon"
-                      width="36px"
-                      height="28px"
-                    />
+                    <picture>
+                      <source srcset="img/slide-img-3.svg" media="(min-width: 1024px)" width="60px" height="60px">
+                      <img src="img/slide-img-3.svg" alt="icon" width="40px" height="40px" />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -389,7 +409,9 @@
           <div class="images-block-content">
             <div class="images-block-title">
               <h2>Ready for a new project?</h2>
-              <button class="contact-us-button">contact us</button>
+              <button class="contact-us-button contact-button">
+                contact us
+              </button>
             </div>
             <div class="images-block-photos" id="images-block-photos">
               <div class="mooving-block order-4">
@@ -489,7 +511,7 @@
                   <img src="img/images-block-img-6-xs.png" alt="" />
                 </picture>
               </div>
-              <div class="static-block">
+              <div class="static-block streight-corners">
                 <picture>
                   <source
                     srcset="img/images-block-img-7.png"
@@ -529,47 +551,60 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div>
-            <p>Services</p>
-            <nav>
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div>
-            <p>About us</p>
-            <nav>
-              <ul>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-              </ul>
-            </nav>
-          </div>
-          <form action="">
-            <p>Join our newsletter</p>
+          <div class="footer-content-navigation">
             <div>
-              <input type="text" placeholder="Email" id="" />
+              <p>Services</p>
+              <nav>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
             </div>
-            <button type="submit">Submit</button>
-          </form>
+            <div>
+              <p>Follow us</p>
+              <nav>
+                <ul>
+                  <li><a href="">Twitter</a></li>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href="">Instagram</a></li>
+                </ul>
+              </nav>
+            </div>
+            <form action="">
+              <p>Join our newsletter</p>
+              <div>
+                <input type="text" placeholder="Email" id="" />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
           <div class="footer-logo-bg">
             <picture>
               <source
-                srcset="img/footer-logo-bg-l.svg"
+                srcset="img/footer-logo.svg"
                 media="(min-width: 1300px)"
+                width="1100px"
+                height="323px"
               />
               <source
-                srcset="img/footer-logo-bg-fullsize.svg"
+                srcset="img/footer-logo.svg"
+                media="(min-width: 1024px)"
+                width="900px"
+                height="273px"
+              />
+              <source
+                srcset="img/footer-logo.svg"
                 media="(min-width: 640px)"
+                width="512px"
+                height="142px"
               />
               <img
-                class="footer-logo-bg-s.svg"
-                src="img/footer-logo-bg-s.svg"
+                src="img/footer-logo.svg"
                 alt="Logo"
+                width="312px"
+                height="92px"
               />
             </picture>
           </div>
@@ -596,6 +631,93 @@
         </div>
       </div>
     </footer>
+    <div class="burger-menu" id="popup">
+      <div class="burger-menu-content">
+        <div class="content">
+          <div class="top-content">
+            <div>
+              <img
+                src="img/footer-logo.svg"
+                alt="logo"
+                width="88px"
+                height="24px"
+              />
+              <button class="burger-close-button" id="burger-close-button">
+                <img
+                  src="img/burger-menu-close-icon.svg"
+                  alt="close"
+                  width="11px"
+                  height="11px"
+                />
+              </button>
+            </div>
+            <div>menu</div>
+          </div>
+          <div class="burger-nav">
+            <nav>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">As built</a></li>
+                <li><a href="">Drafting Services</a></li>
+                <li><a href="">3D Visualization</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="burger-bottom">
+          <div>© 2022</div>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us-menu" id="contact-us-menu">
+      <div class="contact-us-decor"></div>
+      <div class="contact-us-content">
+        <button class="contact-us-close-button" id="contact-us-close-button">
+          <picture>
+            <source srcset="img/burger-menu-close-icon.svg" media="(min-width: 1024px)" width="18px" height="18px">
+          
+            <img src="img/burger-menu-close-icon.svg" alt="close"></picture>
+        
+        </button>
+        <div class="contact-us-inner-content">
+          <h2>
+            <div class="pl-150">have a <br class="mobile-display">
+            <span class="block-right">project?</span>
+          </div>
+          <div class="pl-50">
+            <span class="dark mr-20">we
+
+            </span>would love <br class="mobile-display"> 
+            <span class="dark block-right">
+              <span class="mr-20">to</span> 
+              <span class="light-text">help</span>
+            </span> 
+          </div>
+        </h2>
+          <p>contact form</p>
+          <form action="">
+            <div>
+              <input type="text" name="" id="" placeholder="Name">
+            </div>
+            <div>
+              <input type="text" name="" id="" placeholder="Phone number">
+            </div>
+            <div>
+              <input type="text" name="" id="" placeholder="Email">
+            </div>
+            <div>
+              <input type="text" name="" id="" placeholder="Additional info">
+            </div>
+            <div
+          class="contact-us-submit-button"
+          id="contact-us-submit-button"
+        ><button type="submit">submit</button></div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
     <svg class="svg">
       <clipPath id="desktop-top-left" clipPathUnits="objectBoundingBox">
         <path

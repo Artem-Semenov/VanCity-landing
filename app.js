@@ -68,6 +68,7 @@ firstSwiper = new Swiper(".third-page-slider-line", {
   scrollbar: {
     el: ".third-page-slider-scrollbar",
     draggable: true,
+
   },
 
   slidesPerView: 1.23,
@@ -75,7 +76,9 @@ firstSwiper = new Swiper(".third-page-slider-line", {
   centeredSlides: true,
   breakpoints: {
     320: {
-      slidesPerView: 1.8,
+      spaceBetween: 80,
+      slidesPerView: 1.85,
+      centeredSlides: true,
     },
     640: {},
     1024: {
@@ -83,8 +86,10 @@ firstSwiper = new Swiper(".third-page-slider-line", {
       slidesPerView: 2,
     },
     1300: {
+   
       spaceBetween: 100,
       slidesPerView: 2,
+      
     },
   },
 });
@@ -106,9 +111,11 @@ if (windowWidth > 1024) {
       0 /*  && !isInView(document.querySelector('.center-trigger-1')) */
     ) {
       // document.getElementById("trigger-1").scrollIntoView();
-      document.querySelector(".center-trigger-1").getBoundingClientRect().top +
-        window.scrollY -
-        (windowHeight - 50);
+      window.scroll({
+        top: document.querySelector(".center-trigger-1").getBoundingClientRect().top +
+        window.scrollY - 50,
+      })
+     
     } else if (
       index === 1 &&
       previousIndex <
@@ -347,7 +354,7 @@ const swiper = new Swiper(".swiper", {
   },
   slidesPerView: 1.23,
   slideToClickedSlide: true,
-  centeredSlides: true,
+  centeredSlides: false,
   breakpoints: {
     320: {
       slidesPerView: 1.23,
@@ -427,6 +434,32 @@ smoothAnchorScroll.init();
 /**
  * MOBILE BURGER
  */
-const button = document.getElementById("burger-button");
+const openButton = document.getElementById("burger-button");
+const closeButton = document.getElementById('burger-close-button')
+const popup = document.getElementById('popup')
 
-button.addEventListener("click", function (e) {});
+openButton.addEventListener("click", function (e) {
+popup.classList.add('active')
+});
+
+closeButton.addEventListener("click", function (e) {
+popup.classList.remove('active')
+});
+
+
+/**
+ * CONTACT POP-UP
+ */
+const contactUsMenu = document.getElementById('contact-us-menu')
+const contactButtons = document.querySelectorAll('.contact-button');
+const contactCloseButton = document.getElementById('contact-us-close-button');
+
+contactButtons.forEach(el => {
+el.addEventListener('click', function(e) {
+contactUsMenu.classList.add('active')
+})
+})
+
+contactCloseButton.addEventListener('click', function(e) {
+  contactUsMenu.classList.remove('active')
+})

@@ -10,16 +10,18 @@
 .main-first-page-content {
   position: relative;
 padding: 64px 12px 230px 12px;
-
- background: #fff;
- border-top-left-radius: 75px;
+ background: url(img/lines-bg-dark-white-xs.svg) center repeat-y #fff;
+ border-top-right-radius: 20px;
+  /* 
  border-bottom-right-radius: 135px;
-border-top-right-radius: 20px;
-border-bottom-left-radius: 20px;
+ border-top-left-radius: 75px;
+border-bottom-left-radius: 20px; */
+-webkit-clip-path: url(#main-page-s);
+clip-path: url(#main-page-s);
 
 }
 
-.main-first-page-content:before {
+/* .main-first-page-content:before {
   content: '';
   width: 68px;
   height: 68px;
@@ -42,7 +44,7 @@ border-bottom-left-radius: 20px;
   background-size: cover;
   -webkit-clip-path: url(#mobile-bottom-right);
   clip-path: url(#mobile-bottom-right);
-} 
+}  */
 
 .main-first-page-title {
 font-family: 'Bai Jamjuree';
@@ -97,7 +99,11 @@ background: #112C41;
 border-radius: 3px;
 color: #B1DEDB;
 }
-.main-first-page-content > img {
+ 
+.main-page-content-wrapper {
+  position: relative;
+  }
+.main-page-content-wrapper > img {
   position: absolute;
   z-index: 1;
   bottom: 9px;
@@ -194,7 +200,7 @@ color: rgba(177, 222, 219, 0.6);
 }
 .second-page-content {
   /* background: url(img/second-page-bg-xs.svg) no-repeat; */
-  background: #0B2030;
+  background: url(img/lines-bg-dark-blue-xs.svg) center repeat-y #0B2030;
   padding: 59px 21px 21px 12px;
   position: relative;
   border-top-left-radius: 75px;
@@ -202,8 +208,10 @@ color: rgba(177, 222, 219, 0.6);
 border-top-right-radius: 20px;
 border-bottom-left-radius: 20px;
   z-index: 1;
+  -webkit-clip-path: url(#second-page-s);
+  clip-path: url(#second-page-s);
 }
-.second-page-content:before {
+/* .second-page-content:before {
   content: '';
   width: 68px;
   height: 68px;
@@ -226,7 +234,7 @@ border-bottom-left-radius: 20px;
   background-size: cover;
   -webkit-clip-path: url(#mobile-bottom-right);
   clip-path: url(#mobile-bottom-right);
-} 
+}  */
 .second-page-content > h2, .third-page-content > h2 {
   font-family: 'Bai Jamjuree';
 font-style: normal;
@@ -386,11 +394,11 @@ width: 2px;
 .third-page-content {
   position: relative;
   /* background: rgba(177, 222, 219, 0.1); */
-  background: #213E50;
-  margin-top: -192px;
-  padding-top: 291px;
-   margin-bottom: -20px; 
-   padding-bottom: 90px; 
+  background: url(img/lines-bg-dark-blue-xs.svg) center repeat-y #213E50;
+  margin-top: -222px;
+  padding-top: 221px;
+   margin-bottom: -105px; 
+   padding-bottom: 175px; 
   padding-left: 12px;
   padding-right: 6px;
 }
@@ -482,9 +490,18 @@ width: 180px;
     margin-bottom: 17px;
     margin-right: 12px;
   }
- 
-  
+
+  .sf-span {
+    font-size: 7px;
+    margin-left: -10px;
+    line-height: 0;
+  }
+
 @media (min-width: 640px) {
+  .sf-span {
+    font-size: 10px;
+    margin-left: -5px;
+  }
   .container {
     max-width: 610px;
   }
@@ -523,7 +540,6 @@ display: none;
   .third-page-content {
     margin-left: -12px;
     margin-right: -12px;
-    padding-bottom: 50px;
   }
   .third-page-bottom-decor {
     width: 571px;
@@ -555,6 +571,9 @@ width: 270px;
 }
 
 @media (min-width: 1024px) {
+  .sf-span {
+font-size: 13px;
+  }
   .desktop-mr-5 {
 margin-right: 6px;
   }
@@ -567,7 +586,7 @@ margin-right: 6px;
   .main {
     margin-top: 0;
   }
-  .main-first-page-content:before {
+ /*  .main-first-page-content:before {
     width: 112px;
     height: 112px;
     -webkit-clip-path: url(#desktop-top-left);
@@ -578,8 +597,8 @@ margin-right: 6px;
     height: 212px;
     -webkit-clip-path: url(#desktop-bottom-right);
     clip-path: url(#desktop-bottom-right);
-  } 
-  .second-page-content:before {
+  }  */
+/*   .second-page-content:before {
     width: 112px;
     height: 112px;
     -webkit-clip-path: url(#desktop-top-left);
@@ -590,7 +609,7 @@ margin-right: 6px;
     height: 212px;
     -webkit-clip-path: url(#desktop-bottom-right);
     clip-path: url(#desktop-bottom-right);
-  } 
+  }  */
   .mobile-display-none {
 display: block;
   }
@@ -600,9 +619,7 @@ display: block;
   .container {
     max-width: 990px;
   }
-  .header-content {
-    gap: 233px;
-  }
+ 
   .leaf-bg {
     padding-right: 50px;
     background-size: 30px 30px;
@@ -613,9 +630,11 @@ display: block;
   }
   .main-first-page-content {
      padding: 48px 15px 89px 64px;
-     border-top-left-radius: 120px;
-     border-bottom-right-radius: 225px;
+     /* border-top-left-radius: 120px; */
+     /* border-bottom-right-radius: 225px; */
      background: url(img/lines-bg-dark-white.svg) center #fff;
+     -webkit-clip-path: url(#main-page-l);
+     clip-path: url(#main-page-l);
     /* background: url(img/main-page-bg-white-m.svg) no-repeat; */ 
   }
   .main-first-page-title {
@@ -676,17 +695,16 @@ display: block;
   .sub-main-content >div:nth-child(3){
     padding-top: 0;
   }
-  .second-page-content {
-    border-top-left-radius: 120px;
-    border-bottom-right-radius: 225px
-  }
+ 
   .second-page {
     margin-top: 90px;
 
   }
   .second-page-content  {
     padding: 58px 64px 86px 64px;
-    background: url(img/lines-bg-dark-blue.svg) center repeat-y #0B2030;;
+    background: url(img/lines-bg-dark-blue.svg) center repeat-y #0B2030;
+    -webkit-clip-path: url(#second-page-l);
+     clip-path: url(#second-page-l);
   }
   .second-page-content > h2  {
     font-size: 75px;
@@ -774,7 +792,7 @@ display: block;
     margin-left: 131px;
   }
   .third-page-content {
-  padding: 332px 38px 60px 67px;
+  padding: 332px 38px 145px 67px;
   background: url(img/lines-bg-dark-blue.svg) center repeat-y #213E50;;
   }
   .block-with-decor .third-page-decor {
@@ -797,6 +815,9 @@ display: block;
     font-size: 25px;
     line-height: 39px;
     width: 250px;
+}
+.flex-wrap.swiper-slide {
+gap: 45px;
 }
 .third-page-bottom-decor {
   width: 860px;
@@ -843,8 +864,7 @@ display: block;
 }
 .sub-main-content {
   padding-left: 0;
-  gap: 19px;
-
+  gap: 16px;
 }
 .green-decor-element {
   height: 24px;
@@ -854,6 +874,12 @@ display: block;
 }
 }
 @media (min-width: 1300px) {
+  .sf-span {
+font-size: 18px; 
+  }
+  .sub-main-content {
+    gap: 19px;
+  }
   .container {
     max-width: 1288px;
   }

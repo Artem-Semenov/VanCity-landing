@@ -777,8 +777,14 @@ font-size: 24px;
     .footer-content {
       margin: 0 -12px;
     }
+    .container {
+      max-width: 610px;
+    }
 }
 @media (min-width: 1024px) {
+  .container {
+    max-width: 990px;
+  }
   .contact-us-menu {
     background: url(img/lines-bg-dark-blue.svg) center repeat-y #112C41;
   }
@@ -1086,6 +1092,9 @@ right: 0px;
 
 
 @media (min-width: 1300px) {
+  .container {
+    max-width: 1288px;
+  }
   .header-content {
     gap: 233px;
   }

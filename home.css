@@ -502,9 +502,7 @@ width: 180px;
     font-size: 10px;
     margin-left: -5px;
   }
-  .container {
-    max-width: 610px;
-  }
+ 
   .display-phone {
 display: none;
   }
@@ -616,9 +614,7 @@ display: block;
   .display-m {
     display: block;
     }
-  .container {
-    max-width: 990px;
-  }
+ 
  
   .leaf-bg {
     padding-right: 50px;
@@ -880,9 +876,7 @@ font-size: 18px;
   .sub-main-content {
     gap: 19px;
   }
-  .container {
-    max-width: 1288px;
-  }
+  
   .main-first-page-content > img {
     width: 421px;
     height: 223px;

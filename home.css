@@ -400,8 +400,10 @@ width: 2px;
    margin-bottom: -105px; 
    padding-bottom: 175px; 
   padding-left: 12px;
-  padding-right: 6px;
+  /* padding-right: 6px; */
 }
+
+
 .pl-8{
   padding-left: 8px;
 }

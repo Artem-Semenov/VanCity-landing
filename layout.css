@@ -233,7 +233,6 @@ overflow: hidden;
 }
 
 .footer-privacy-policy {
-  padding: 0 12px;
   margin-top: 24px;
 font-family: 'Space Grotesk';
 font-style: normal;
@@ -732,7 +731,7 @@ position: relative;
   }
   
   .swiper {
-    width: 550px;
+    width: 600px;
   }
   .slider-title > h2 > div > span {
     font-size: 20px;
@@ -832,7 +831,7 @@ display: none;
   }
 
   .header-nav ul > li > a.active {
-    color: #B1DEDB;;
+    color: #B1DEDB;
   }
   .mobile-burger-button {
     display: none;

@@ -25,12 +25,12 @@ const activeTextDelimeter = window.innerWidth / 2;
 const header = document.getElementById("header");
 
 
-let numberDelta;
+/* let numberDelta;
 let drugNumberDelimeter;
 let numberDelimeter;
 let moveDrugDelimeter;
-let index;
-/*  if (window.innerWidth < 641) {
+let index; 
+ if (window.innerWidth < 641) {
   index = 0.85           //sliderLine speed index
   numberDelimeter = 3.4; // default sliderLine move Index
   moveDrugDelimeter = 8.4 // Drug move index
@@ -71,22 +71,24 @@ firstSwiper = new Swiper(".third-page-slider-line", {
 
   slidesPerView: 1.23,
   slideToClickedSlide: true,
-  centeredSlides: true,
+  centeredSlides: false,
   breakpoints: {
     320: {
-      spaceBetween: 80,
-      slidesPerView: 1.85,
-      centeredSlides: true,
+      spaceBetween: 0,
+      slidesPerView: 1.25,
+      // centeredSlides: false,
+      // loopFillGroupWithBlank: true,
     },
     640: {},
     1024: {
       spaceBetween: 80,
-      slidesPerView: 2,
+      // centeredSlides: false,
+      slidesPerView: 1.35,
     },
     1300: {
-   
+      // centeredSlides: false,
       spaceBetween: 100,
-      slidesPerView: 2,
+      slidesPerView: 1.3,
       
     },
   },

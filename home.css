@@ -741,7 +741,7 @@ display: block;
     margin-right: -90px;
   }
   .third-page-features div {
-    margin-right: -63px;
+    margin-right: -98px;
   }
   .second-page-services p, .third-page-features p {
   width: 29%;
@@ -1074,5 +1074,7 @@ gap: 45px;
 .fixed-slider-content {
   /* top: 100px; */
 }
-
+.third-page-features div {
+  margin-right: -56px;
+}
 }

@@ -13,10 +13,7 @@ padding: 64px 12px 230px 12px;
  background: url(img/lines-bg-dark-white-xs.svg) center repeat-y #fff;
  background-size: var(--bg-size);
  border-top-right-radius: 20px;
-  /* 
- border-bottom-right-radius: 135px;
- border-top-left-radius: 75px;
-border-bottom-left-radius: 20px; */
+ border-bottom-left-radius: 20px;
 -webkit-clip-path: url(#main-page-s);
 clip-path: url(#main-page-s);
 
@@ -53,7 +50,7 @@ font-size: 36px;
 line-height: 44px;
 text-transform: uppercase;
 color: #112C41;
-margin-bottom: 50px;
+margin-bottom: 22px;
 }
 .main-first-page-title > h1 {
   font-weight: 600;
@@ -89,7 +86,7 @@ color: rgba(17, 44, 65, 0.8);
 }
 .main-page-text > button {
   font-size: 15px;
-  margin-top: 36px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   width: fit-content;

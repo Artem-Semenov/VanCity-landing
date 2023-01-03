@@ -325,7 +325,4 @@ paragraphs[3].classList.add('active')
 
 }); */
 
-console.log(document.getRootNode());
-
-
 

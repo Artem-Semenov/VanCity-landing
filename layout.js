@@ -1,4 +1,3 @@
-
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 /**
@@ -74,35 +73,43 @@ document.addEventListener("scroll", function (e) {
  * MOBILE BURGER
  */
 const openButton = document.getElementById("burger-button");
-const closeButton = document.getElementById('burger-close-button')
-const popup = document.getElementById('popup')
+const closeButton = document.getElementById("burger-close-button");
+const popup = document.getElementById("popup");
 
 openButton.addEventListener("click", function (e) {
-popup.classList.add('active')
+  popup.classList.add("active");
 });
 
 closeButton.addEventListener("click", function (e) {
-popup.classList.remove('active')
+  popup.classList.remove("active");
 });
-
 
 /**
  * CONTACT POP-UP
  */
-const contactUsMenu = document.getElementById('contact-us-menu')
-const contactButtons = document.querySelectorAll('.contact-button');
-const contactCloseButton = document.getElementById('contact-us-close-button');
+const contactUsMenu = document.getElementById("contact-us-menu");
+const contactButtons = document.querySelectorAll(".contact-button");
+const contactCloseButton = document.getElementById("contact-us-close-button");
 
-contactButtons.forEach(el => {
-el.addEventListener('click', function(e) {
-contactUsMenu.classList.add('active')
-})
-})
+const careersMenu = document.getElementById("careers-menu");
+const careersMenuButton = document.getElementById("careers-button");
+const careersCloseButton = document.getElementById("careers-close-button");
 
-contactCloseButton.addEventListener('click', function(e) {
-  contactUsMenu.classList.remove('active')
-})
+careersMenuButton.addEventListener("click", () => {
+  careersMenu.classList.add("active");
+});
+careersCloseButton.addEventListener("click", () => {
+  careersMenu.classList.remove("active");
+});
+contactButtons.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    contactUsMenu.classList.add("active");
+  });
+});
 
+contactCloseButton.addEventListener("click", function (e) {
+  contactUsMenu.classList.remove("active");
+});
 
 /**
  * SMOOTH SCROLL
@@ -136,10 +143,8 @@ class SmoothAnchorScroll {
 const smoothAnchorScroll = new SmoothAnchorScroll();
 smoothAnchorScroll.init();
 
-
-
 /**
- * IS IN VIEW FUNCTION 
+ * IS IN VIEW FUNCTION
  */
 
 function isInView(el) {

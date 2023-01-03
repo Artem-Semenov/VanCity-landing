@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 :root {
-  --bg-size: unset;
+  --bg-size: 88vw;
 }
 
 .container {
@@ -163,12 +163,13 @@ line-height: 20px;
 text-transform: uppercase;
 color: rgba(177, 222, 219, 0.6);
 }
-.footer-content-navigation div > nav > ul >li > a {
+.footer-content-navigation div > nav > ul >li > a,.footer-content-navigation div > nav > ul >li > button {
 font-family: 'Space Grotesk';
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 color: #B1DEDB;
+background-color: transparent;
 }
 .footer-content-navigation form {
   margin-top: 80px;
@@ -725,6 +726,12 @@ background-size: var(--bg-size);
 }
 .footer-content-wrapper {
 position: relative;
+}
+
+@media(min-width: 480px) {
+  :root {
+     --bg-size: 435px; 
+  }
 }
 @media (min-width: 640px) {
   .header-contact-us button {

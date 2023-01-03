@@ -1110,7 +1110,7 @@ right: 0px;
 
 
 .footer-content-navigation {
-  padding: 100px 271px 0px 130px;
+  padding: 100px 271px 0px 86px;
   gap: 6px;
 }
 .static-block.streight-corners >picture > img{
@@ -1151,6 +1151,9 @@ right: 0px;
   }
   .header-content {
     gap: 233px;
+  }
+  .footer-content-navigation {
+    padding-left: 130px;
   }
   .footer-content-navigation form p {
     font-size: 26px;

@@ -40,7 +40,7 @@ const firstSubSwiper = new Swiper(".second-page-images-slider", {
   spaceBetween: 5,
   breakpoints: {
     320: {
-      slidesPerView: 1.07,
+      slidesPerView: 1.08,
     },
     370: {
 slidesPerView: 1.1,

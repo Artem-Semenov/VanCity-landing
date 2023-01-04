@@ -178,9 +178,3 @@ function fadeOut(el) {
     }
   })();
 }
-/* fadeOut(document.querySelector('.main-first-page'))
-
-setTimeout(() => {
-  fadeIn(document.querySelector('.main-first-page'), 'block')
-},1000)
- */

@@ -96,7 +96,7 @@ firstSwiper = new Swiper(".third-page-slider-line", {
 
 // let y = document.querySelector('.center-trigger-2').getBoundingClientRect().top + window.scrollY
 
-if (windowWidth > 1024) {
+if (windowWidth > 1023) {
   //scrolling down
   firstSwiper.on("activeIndexChange", function (e) {
     // console.log(sliderWrapper.getBoundingClientRect().top, window.scrollY);

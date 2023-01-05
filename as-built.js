@@ -1,4 +1,3 @@
-
 firstSwiper = new Swiper(".second-page-slider-line", {
   direction: "horizontal",
   speed: 500,
@@ -6,7 +5,6 @@ firstSwiper = new Swiper(".second-page-slider-line", {
   scrollbar: {
     el: ".second-page-slider-scrollbar",
     draggable: true,
-
   },
 
   slidesPerView: 1.23,
@@ -25,7 +23,6 @@ firstSwiper = new Swiper(".second-page-slider-line", {
     1300: {
       spaceBetween: 100,
       slidesPerView: 1.3,
-      
     },
   },
 });
@@ -43,13 +40,13 @@ const firstSubSwiper = new Swiper(".second-page-images-slider", {
       slidesPerView: 1.08,
     },
     370: {
-slidesPerView: 1.1,
+      slidesPerView: 1.1,
     },
     380: {
       slidesPerView: 1.125,
     },
     390: {
-slidesPerView: 1.15,
+      slidesPerView: 1.15,
     },
     410: {
       slidesPerView: 1.2,
@@ -58,7 +55,7 @@ slidesPerView: 1.15,
       slidesPerView: 1.3,
     },
     480: {
-slidesPerView: 1.4,
+      slidesPerView: 1.4,
     },
     640: {
       slidesPerView: 1.5,
@@ -77,125 +74,58 @@ slidesPerView: 1.4,
 firstSwiper.controller.control = firstSubSwiper;
 firstSubSwiper.controller.control = firstSwiper;
 
-
-// const sliderWrapper = document.getElementById("fixed-slider-wrapper");
-// const sliderWrapperHeight = sliderWrapper.offsetHeight;
-
-
-// if (windowWidth > 1024) {
-//   //scrolling down
-//   firstSwiper.on("activeIndexChange", function (e) {
-//     // console.log(sliderWrapper.getBoundingClientRect().top, window.scrollY);
-//     let index = firstSwiper.activeIndex;
-//     let previousIndex = firstSwiper.previousIndex;
-//     console.log(index);
-//     console.log(previousIndex);
-
-//     if (index === 0 && previousIndex === 3) {
-//     } else if (
-//       index ===
-//       0 /*  && !isInView(document.querySelector('.center-trigger-1')) */
-//     ) {
-//       // document.getElementById("trigger-1").scrollIntoView();
-//       window.scroll({
-//         top: document.querySelector(".center-trigger-1").getBoundingClientRect().top +
-//         window.scrollY - 50,
-//       })
-     
-//     } else if (
-//       index === 1 &&
-//       previousIndex <
-//         index /* && !isInView(document.querySelector('.center-trigger-2')) */
-//     ) {
-//       window.scroll({
-//         top:
-//           document.querySelector(".center-trigger-2").getBoundingClientRect()
-//             .top +
-//           window.scrollY -
-//           (windowHeight - 50),
-//       });
-//       //  document.getElementById("trigger-2").scrollIntoView();
-//     } else if (
-//       index === 1 &&
-//       previousIndex >
-//         index /* && !isInView(document.querySelector('.center-trigger-2')) */
-//     ) {
-//       window.scroll({
-//         top:
-//           document.querySelector(".center-trigger-2").getBoundingClientRect()
-//             .top +
-//           window.scrollY -
-//           50,
-//       });
-//       //  document.getElementById("trigger-2").scrollIntoView();
-//     } else if (
-//       index === 2 &&
-//       previousIndex <
-//         index /* && !isInView(document.querySelector('.center-trigger-3')) */
-//     ) {
-//       window.scroll({
-//         top:
-//           document.querySelector(".center-trigger-3").getBoundingClientRect()
-//             .top +
-//           window.scrollY -
-//           (windowHeight - 50),
-//       });
-
-//       //  document.getElementById("trigger-3").scrollIntoView();
-//     } else if (
-//       index === 2 &&
-//       previousIndex >
-//         index /* && !isInView(document.querySelector('.center-trigger-3')) */
-//     ) {
-//       window.scroll({
-//         top:
-//           document.querySelector(".center-trigger-3").getBoundingClientRect()
-//             .top +
-//           window.scrollY -
-//           50,
-//       });
-
-//       //  document.getElementById("trigger-3").scrollIntoView();
-//     } else if (
-//       index ===
-//       3 /*&&  !isInView(document.querySelector('.center-trigger-4')) */
-//     ) {
-//       console.log("scrolling to trigger 4");
-//       // document.getElementById("trigger-4").scrollIntoView();
-//       window.scroll({
-//         top:
-//           document.querySelector(".center-trigger-4").getBoundingClientRect()
-//             .top +
-//           window.scrollY -
-//           (windowHeight - 50),
-//       });
-//     }
-//   });
-// }
+/**
+ * FULL SCREEN SLIDER
+ */
+if (window.innerWidth > 1023) {
 
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    let index = +entry.target.dataset.id.slice(-1);
+    if (entry.isIntersecting) {
+      if (index === 1) {
+        document
+          .querySelectorAll(".fixed-block:not(.fixed-block.block-1)")
+          .forEach((el) => {
+            fadeOut(el);
+          });
+        if (document.querySelector(".fixed-block.block-1").style.opacity < 1) {
+          fadeIn(document.querySelector(".fixed-block.block-1"), "flex");
+        }
+      }
+      if (index === 2) {
+        document
+          .querySelectorAll(".fixed-block:not(.fixed-block.block-2)")
+          .forEach((el) => {
+            fadeOut(el);
+          });
+        fadeIn(document.querySelector(".fixed-block.block-2"), "flex");
+      }
+      if (index === 3) {
+        document
+          .querySelectorAll(".fixed-block:not(.fixed-block.block-3)")
+          .forEach((el) => {
+            fadeOut(el);
+          });
+        fadeIn(document.querySelector(".fixed-block.block-3"), "flex");
+      }
+      if (index === 4) {
+        document
+          .querySelectorAll(".fixed-block:not(.fixed-block.block-4)")
+          .forEach((el) => {
+            fadeOut(el);
+          });
+        if (document.querySelector(".fixed-block.block-4").style.opacity < 1) {
+          fadeIn(document.querySelector(".fixed-block.block-4"), "flex");
+        }
+      }
+    }
+  });
+});
 
-
-/* document.addEventListener("scroll", function (e) {
-  let blockPosition = sliderWrapper.getBoundingClientRect().top;
-  //determine slider position
-  if (blockPosition < 100 && blockPosition > -sliderWrapperHeight) {
-    header.classList.add("hide");
-  } else {
-    header.classList.remove("hide");
-  }
- 
-  if (isInView(document.querySelector(".center-trigger-1"))) {
-    firstSwiper.slideTo(0, 1000);
-    // console.log('We have reached first trigger');
-  } else if (isInView(document.querySelector(".center-trigger-2"))) {
-    firstSwiper.slideTo(1, 1000);
-    // console.log('We have reached second trigger');
-  } else if (isInView(document.querySelector(".center-trigger-3"))) {
-    firstSwiper.slideTo(2, 1000);
-    // console.log('We have reached third trigger');
-  } else if (isInView(document.querySelector(".center-trigger-4"))) {
-    firstSwiper.slideTo(3, 1000);
-    // console.log('We have reached fourth trigger');
-  } 
-}); */
+observer.observe(document.querySelector(".center-trigger-1"));
+observer.observe(document.querySelector(".center-trigger-2"));
+observer.observe(document.querySelector(".center-trigger-3"));
+observer.observe(document.querySelector(".center-trigger-4"));
+}

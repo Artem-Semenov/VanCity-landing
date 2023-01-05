@@ -2,9 +2,7 @@
  * THIRD PAGE HORIZONTAL SLIDER
  */
 
-const sliderWrapper = document.getElementById("fixed-slider-wrapper");
 
-const sliderWrapperHeight = sliderWrapper.offsetHeight;
 
 const drug = document.getElementById("slider-drug");
 
@@ -230,13 +228,13 @@ if (windowWidth > 1023) {
   /* if (window.innerWidth > 1024) { */
 
   document.addEventListener("scroll", function (e) {
-    let blockPosition = sliderWrapper.getBoundingClientRect().top;
+   /*  let blockPosition = sliderWrapper.getBoundingClientRect().top;
     //determine slider position
     if (blockPosition < 100 && blockPosition > -sliderWrapperHeight) {
       header.classList.add("hide");
     } else {
       header.classList.remove("hide");
-    }
+    } */
 
     if (isInView(document.querySelector(".center-trigger-1"))) {
       firstSwiper.slideTo(0, 1000);

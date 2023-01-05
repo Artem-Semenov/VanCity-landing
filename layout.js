@@ -44,7 +44,13 @@ const swiper = new Swiper(".swiper", {
 
 /**
  * PHOTOS SECTION - PHOTOS MOOVING ON SCROLL
+ * hide header on fullScreen Slider
  */
+
+const sliderWrapper = document.querySelector(".inview-hide-header");
+
+const sliderWrapperHeight = sliderWrapper.offsetHeight;
+
 
 const photosBlock = document.getElementById("images-block-photos");
 const moovingBlocks = document.querySelectorAll(".mooving-block");
@@ -56,6 +62,21 @@ if (window.innerWidth > 1024) {
 const delimeter = blockHeight / deviceDelta;
 
 document.addEventListener("scroll", function (e) {
+//slider 
+
+let sliderPosition = sliderWrapper.getBoundingClientRect().top;
+//determine slider position
+if (sliderPosition < 100 && sliderPosition > -sliderWrapperHeight) {
+  header.classList.add("hide");
+} else {
+  header.classList.remove("hide");
+}
+
+//
+
+
+
+
   let blockPosition = photosBlock.getBoundingClientRect().top;
   num = blockPosition;
   if (blockPosition > blockHeight) {
@@ -178,3 +199,6 @@ function fadeOut(el) {
     }
   })();
 }
+
+
+

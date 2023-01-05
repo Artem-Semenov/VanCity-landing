@@ -377,9 +377,12 @@ color: rgba(177, 222, 219, 0.7);
   justify-content: center;
   flex-basis: calc(50%);
   order: 1;
-
-font-size: 16px;
+  color: #B1DEDB;
+font-size: 18px;
 line-height: 32px;
+}
+.fixed-block .item-1 span {
+  font-size: 16px;
 }
 .fixed-block .item-2 {
   display: flex;
@@ -766,7 +769,7 @@ font-weight: 600;
 font-size: 45px;
 line-height: 60px;
 text-transform: uppercase;
-color: #B1DEDB;
+
 }
 .fixed-block .item-2 {
 order: 3;

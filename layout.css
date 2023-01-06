@@ -562,6 +562,7 @@ visibility: visible;
   justify-content: space-between;
   max-width: 640px;
   margin: auto;
+overflow: auto;
 }
 .burger-menu-content .content {
   display: flex;
@@ -596,10 +597,14 @@ background: rgba(177, 222, 219, 0.05);
 border: 0.6px solid rgba(177, 222, 219, 0.2);
 border-radius: 25.2px;
 }
+.burger-close-button img, .contact-us-close-button img {
+  display: block;
+}
 .burger-nav > nav > ul{
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin-bottom: 25px;
 }
 .burger-nav > nav > ul > li > a {
   font-family: 'Space Grotesk';
@@ -636,9 +641,10 @@ background: #B1DEDB;
   margin-right: 20px;
 }
 .careers-menu .contact-us-content {
-  gap: 26px;
+  gap: 10px;
 }
 .contact-us-content {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -1110,7 +1116,7 @@ right: 0px;
 }
 .contact-us-inner-content > h2 > div, .light-text  {
   font-size: 80px;
-  line-height: 100px;
+  line-height: 80px;
 }
 .burger-close-button, .contact-us-close-button {
   width: 60px;
@@ -1149,6 +1155,9 @@ right: 0px;
 
 
 @media (min-width: 1300px) {
+  .contact-us-inner-content > h2 > div, .light-text  {
+    line-height: 100px;
+  }
   .swiper-button-next, .swiper-button-prev {
     width: 68px !important;
     height: 68px !important;

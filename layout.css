@@ -35,6 +35,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   --bg-size: 88vw;
 }
 
+body.scroll-off {
+  overflow: hidden;
+}
 .container {
   padding: 0px 12px;
   max-width: 480px;
@@ -544,8 +547,8 @@ color: #112C41;
   opacity: 0;
   visibility: hidden;
 transition: all ease 0.3s;
-height: 120vh;
-padding-bottom: 20vh;
+/* height: 120vh; */
+/* padding-bottom: 20vh; */
 }
 .burger-menu.active, .contact-us-menu.active, .careers-menu.active {
 opacity: 1;

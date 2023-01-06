@@ -99,10 +99,12 @@ const popup = document.getElementById("popup");
 
 openButton.addEventListener("click", function (e) {
   popup.classList.add("active");
+  document.body.classList.add('scroll-off');
 });
 
 closeButton.addEventListener("click", function (e) {
   popup.classList.remove("active");
+  document.body.classList.remove('scroll-off');
 });
 
 /**

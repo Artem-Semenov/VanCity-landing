@@ -51,7 +51,6 @@ const sliderWrapper = document.querySelector(".inview-hide-header");
 
 const sliderWrapperHeight = sliderWrapper.offsetHeight;
 
-
 const photosBlock = document.getElementById("images-block-photos");
 const moovingBlocks = document.querySelectorAll(".mooving-block");
 const blockHeight = photosBlock.offsetHeight;
@@ -62,20 +61,17 @@ if (window.innerWidth > 1024) {
 const delimeter = blockHeight / deviceDelta;
 
 document.addEventListener("scroll", function (e) {
-//slider 
+  //slider
 
-let sliderPosition = sliderWrapper.getBoundingClientRect().top;
-//determine slider position
-if (sliderPosition < 100 && sliderPosition > -sliderWrapperHeight) {
-  header.classList.add("hide");
-} else {
-  header.classList.remove("hide");
-}
+  let sliderPosition = sliderWrapper.getBoundingClientRect().top;
+  //determine slider position
+  if (sliderPosition < 100 && sliderPosition > -sliderWrapperHeight) {
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
 
-//
-
-
-
+  //
 
   let blockPosition = photosBlock.getBoundingClientRect().top;
   num = blockPosition;
@@ -99,16 +95,16 @@ const popup = document.getElementById("popup");
 
 openButton.addEventListener("click", function (e) {
   popup.classList.add("active");
-  document.body.classList.add('scroll-off');
+  document.body.classList.add("scroll-off");
 });
 
 closeButton.addEventListener("click", function (e) {
   popup.classList.remove("active");
-  document.body.classList.remove('scroll-off');
+  document.body.classList.remove("scroll-off");
 });
 
 /**
- * CONTACT POP-UP
+ * CONTACT POP-UP // CAREERS POP-UP
  */
 const contactUsMenu = document.getElementById("contact-us-menu");
 const contactButtons = document.querySelectorAll(".contact-button");
@@ -120,18 +116,22 @@ const careersCloseButton = document.getElementById("careers-close-button");
 
 careersMenuButton.addEventListener("click", () => {
   careersMenu.classList.add("active");
+  document.body.classList.add("scroll-off");
 });
 careersCloseButton.addEventListener("click", () => {
   careersMenu.classList.remove("active");
+  document.body.classList.remove("scroll-off");
 });
 contactButtons.forEach((el) => {
   el.addEventListener("click", function (e) {
     contactUsMenu.classList.add("active");
+    document.body.classList.add("scroll-off");
   });
 });
 
 contactCloseButton.addEventListener("click", function (e) {
   contactUsMenu.classList.remove("active");
+  document.body.classList.remove("scroll-off");
 });
 
 /**
@@ -201,6 +201,3 @@ function fadeOut(el) {
     }
   })();
 }
-
-
-

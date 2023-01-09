@@ -546,7 +546,8 @@ color: #112C41;
   z-index: 50;
   opacity: 0;
   visibility: hidden;
-transition: all ease 0.3s;
+  overflow: auto;
+/* transition: all ease 0.3s; */
 /* height: 120vh; */
 /* padding-bottom: 20vh; */
 }
@@ -650,8 +651,8 @@ background: #B1DEDB;
   gap: 56px;
   height: 100%;
   padding: 16px 24px 24px 24px;
-  max-width: 644px;
   margin: auto;
+
 }
 .contact-us-inner-content > h2 > div, .light-text {
   font-family: 'Bai Jamjuree';
@@ -820,9 +821,15 @@ font-size: 20px;
     :root {
       --bg-size: 590px
     }
-  
+    .contact-us-content {
+      margin: 0 -12px;
+      padding: 16px 36px 24px 36px;
+    }
 }
 @media (min-width: 1024px) {
+  .pad-l-100-desktop {
+    padding-left: 45px;
+  }
   .lh-20.dark {
 
     line-height: 35px;
@@ -843,6 +850,9 @@ font-size: 20px;
     background: url(img/lines-bg-dark-blue.svg) center repeat-y #112C41;
    padding-top: 24px;
    background-size: var(--bg-size);
+  }
+  .header-contact-us {
+    margin-left: auto;
   }
   body {
     background: url(img/lines-bg-dark-blue.svg) center repeat-y #112C41;
@@ -989,6 +999,7 @@ right: 0px;
 }
 .slider-title > h2 > div > span {
   font-size: 25px;
+  margin-left: 0;
 }
 .m-display-none {
   display: none;
@@ -1030,7 +1041,7 @@ right: 0px;
 .images-block-title {
   flex-direction: row;
   align-items: flex-end;
-  padding: 0px 75px 0px 258px;
+  padding: 0px 75px 0px 201px;
 }
 .images-block-title {
    margin-bottom: 110px; 
@@ -1081,7 +1092,6 @@ right: 0px;
 }
 
 .contact-us-content {
-  max-width: 1260px;
   gap: 0px;
 }
 .block-right {
@@ -1155,6 +1165,9 @@ right: 0px;
 
 
 @media (min-width: 1300px) {
+  .images-block-title {
+    padding: 0px 75px 0px 258px;
+  }
   .contact-us-inner-content > h2 > div, .light-text  {
     line-height: 100px;
   }

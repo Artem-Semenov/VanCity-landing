@@ -253,11 +253,11 @@ margin-bottom: 20px;
   .button-contact-us {
 background: #112C41;
 border-radius: 3px;
-padding: 18px 28px;
+padding: 16px 20px;
 font-family: 'Space Grotesk';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 15px;
 text-align: center;
 text-transform: uppercase;
 color: #B1DEDB;
@@ -356,7 +356,10 @@ display: none;
 
   
 @media (min-width: 1024px) {
-
+  .button-contact-us {
+    padding: 18px 28px;
+    font-size: 18px;
+  }
  
   .second-page-images-slider>.swiper-wrapper>.swiper-slide > picture > img {
     border-radius: 15px;
@@ -423,7 +426,7 @@ margin-right: 6px;
           padding-right: 0;
         }
         .second-page-services div, .second-page-features div {
-          margin-right: -60px;
+          margin-right: -98px;
         }
         .second-page-services p, .second-page-features p {
         width: 29%;
@@ -515,7 +518,9 @@ gap: 45px;
 
 }
 @media (min-width: 1300px) {
- 
+  .second-page-services div, .second-page-features div {
+    margin-right: -60px;
+  }
   .second-page-content > h2 div:first-child {
     margin-left: 45px;
   }
@@ -571,10 +576,12 @@ padding-top: 0;
   font-size: 25px;
 line-height: 30px;
 } 
-
+.second-page-features div  {
+  margin-right: -63px;
+}
 .second-page-features  {
   padding-top: 51px;
-  gap: 42px; 
+  gap: 36px; 
   }
    .second-page-features p {
     width: 26%;

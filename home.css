@@ -627,10 +627,7 @@ display: block;
     padding-right: 50px;
     background-size: 30px 30px;
   }
-  .header-contact-us {
-    justify-content: flex-start;
-   margin-left: auto;
-  }
+ 
   .main-first-page-content {
      padding: 48px 15px 71px 64px;
      /* border-top-left-radius: 120px; */

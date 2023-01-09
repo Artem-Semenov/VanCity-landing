@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="as-built.css" />
     <link rel="stylesheet" href="fs-ver-slider.css" />
+    <link rel="stylesheet" href="3d-visualization.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -31,8 +32,12 @@
           <nav class="header-nav">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="3d-visualization.html">3D Visualization</a></li>
-              <li><a class="active" href="as-built.html">As built</a></li>
+              <li>
+                <a class="active" href="3d-visualization.html"
+                  >3D Visualization</a
+                >
+              </li>
+              <li><a href="as-built.html">As built</a></li>
               <li><a href="drafting-services.html">Drafting Services</a></li>
             </ul>
           </nav>
@@ -54,59 +59,59 @@
             <div class="main-page-images-wrapper">
               <picture>
                 <source
-                  srcset="as-built-img/main-page-desktop-img-small.png"
+                  srcset="3d-visualization-img/main-page-img-small-l.png"
                   media="(min-width: 1300px)"
-                  width="269"
-                  height="175"
+                  width="272"
+                  height="242"
                 />
                 <source
-                  srcset="as-built-img/main-page-desktop-img-small.png"
+                  srcset="3d-visualization-img/main-page-img-small-l.png"
                   media="(min-width: 1024px)"
                   width="184"
-                  height="123"
+                  height="153"
                 />
                 <img
-                  src="as-built-img/main-page-mobile-img.png"
+                  src="3d-visualization-img/main-page-img-big-s.png"
                   alt=""
                   width="324"
-                  height="186"
+                  height="196"
                 />
               </picture>
               <picture>
                 <source
                   media="(min-width: 1300px)"
-                  srcset="as-built-img/main-page-desktop-img-big.png"
-                  width="334"
-                  height="235"
+                  srcset="3d-visualization-img/main-page-img-big-l.png"
+                  width="325"
+                  height="366"
                 />
                 <source
                   media="(min-width: 1024px)"
-                  srcset="as-built-img/main-page-desktop-img-big.png"
+                  srcset="3d-visualization-img/main-page-img-big-l.png"
                   width="234"
-                  height="166"
+                  height="254"
                 />
                 <img alt="" />
               </picture>
             </div>
             <div class="main-page-content">
               <h1>
-                <div class="pl-20">As-Built</div>
+                3d rendering
                 <br class="display-mobile" />
-                <div class="pl-36">Drawings</div>
-                <br class="display-mobile" />
-                <span class="mr-54">for</span>
-                commercial <br class="display-mobile" />
-                <span class="mr--3">or</span>
-                Residential
-                <span class="ml--4">projects</span>
+                <span
+                  >YOU
+                  <br class="display-m-l" />
+                  have to</span
+                >
+                see <br class="display-mobile" />
+                <div class="align-right">
+                  <span class="mr--3">to</span>
+                  believe
+                </div>
               </h1>
               <div class="main-page-text">
                 <p>
-                  As-Built drawings are floor plans and elevations generated
-                  from site measurement are highly accurate and preferred over
-                  the pre-construction design floor plans because they reflect
-                  the actual condition of building at the time of measuring and
-                  not at the time of construction.
+                  Allow us to showcase the amazing design that previously only
+                  lived in your imagination through our 3D rendering services.
                 </p>
                 <button class="button-contact-us contact-button">
                   Contact us
@@ -116,195 +121,55 @@
           </div>
         </div>
       </section>
-      <section class="second-page">
+      <!--    <section class="slider-section">
         <div class="container">
-          <div class="second-page-content">
-            <h2 class="">
-              <div class="pl-48">
-                As-built
-                <br class="display-mobile" />
-                drawings
-                <span>are only</span>
+          <div class="slider-section-content">
+            <h2">
+              <div>
+                <span>You created an</span>
               </div>
-              <br class="display-m" />
-              <div class="pl-64">
-                <span>as </span>
-                useful <br class="display-mobile" />
-                <span class="ml-30">as they are</span>
-                accurate
+              <div>amazing plan</div>
+              <div>
+                <span>for your</span>
+                build
+                <span>for your</span>
               </div>
+              <div>own imagination</div>
             </h2>
-            <div class="fixed-slider-wrapper" id="fixed-slider-wrapper">
-              <div class="fixed-slider-content">
-                <div class="second-page-features">
-                  <div class="block-with-decor">
-                    <div class="second-page-decor"></div>
-                    Features
-                  </div>
-                  <p class="pl-8">
-                    Partnering with the right company to provide measuring
-                    services and as-built drawings makes all the difference.
-                  </p>
-                  <p class="pl-8 pt-4">
-                    Get the peace of mind you need by leveraging our highly
-                    skilled team of experts for all of your as-built drawing
-                    needs.
-                  </p>
-                </div>
-                <div
-                  class="second-page-bottom-content"
-                  id="second-page-bottom-content"
-                >
-                  <!-- <div class="second-page-bottom-decor" id="slider-drug-line">
-                    <div id="slider-drug"></div>
-                  </div> -->
-                  <div class="second-page-slider-scrollbar"></div>
-                  <div class="second-page-slider-line" id="slider-line">
-                    <div class="swiper-wrapper">
-                      <div class="flex-wrap swiper-slide" id="slider-block-1">
-                        <div>01</div>
-                        <p class="lighten-text active">
-                          Improves the renovation process
-                          <br />
-                          <span>
-                            With a full history of project changes, owners can
-                            see exactly what has been built and do not have to
-                            invest heavily in learning about existing conditions
-                          </span>
-                        </p>
-                      </div>
-                      <div class="flex-wrap swiper-slide">
-                        <div>02</div>
-                        <p class="lighten-text">
-                          Accelerate subcontractor onboarding
-                          <br />
-                          <span>
-                            As subcontractors are added to a project, delivering
-                            a set of as-builts helps teams get access to the
-                            right information quickly, which allows getting up
-                            to speed starting work sooner.
-                          </span>
-                        </p>
-                      </div>
-                      <div class="flex-wrap swiper-slide">
-                        <div>03</div>
-                        <p class="lighten-text">
-                          Streamlines permitting process
-                          <br />
-                          <span>
-                            Oftentimes, municipalities request sets of as-built
-                            drawings in order to issue building permits
-                          </span>
-                        </p>
-                      </div>
-                      <div class="flex-wrap swiper-slide">
-                        <div>04</div>
-                        <p class="lighten-text">
-                          Assists the facilities team
-                          <br />
-                          <span>
-                            With a full record of change, facility teams can
-                            meet issues faster and owners can save money down
-                            the road due to improved operations and speed
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="second-page-images-slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcset="as-built-img/resized-slider-img-1.webp"
-                            width="629"
-                            height="340"
-                          />
-                          <img
-                            src="as-built-img/resized-slider-img-1.webp"
-                            alt=""
-                            width="312"
-                            height="224"
-                          />
-                        </picture>
-                      </div>
-                      <div class="swiper-slide">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcset="as-built-img/resized-slider-img-2.webp"
-                            width="629"
-                            height="340"
-                          />
-                          <img
-                            src="as-built-img/resized-slider-img-2.webp"
-                            alt=""
-                            width="312"
-                            height="224"
-                          />
-                        </picture>
-                      </div>
-                      <div class="swiper-slide">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcset="as-built-img/resized-slider-img-3.webp"
-                            width="629"
-                            height="340"
-                          />
-                          <img
-                            src="as-built-img/resized-slider-img-3.webp"
-                            alt=""
-                            width="312"
-                            height="224"
-                          />
-                        </picture>
-                      </div>
-                      <div class="swiper-slide">
-                        <picture>
-                          <source
-                            media="(min-width: 1024px)"
-                            srcset="as-built-img/resized-slider-img-4.webp"
-                            width="629"
-                            height="340"
-                          />
-                          <img
-                            src="as-built-img/resized-slider-img-4.webp"
-                            alt=""
-                            width="312"
-                            height="224"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <h2">
+              <div>
+                <span>We provide</span>
+                Architectural 3D Rendering
+              </div>
+              <div>
+                <span>and</span>
+                visualization
+                <span>services to</span>
+                architects
+              </div>
+              <div>
+                designers
+                <span>real estate</span>
+                developers
+                <span>and</span>
+              </div>
+              <div>homeowners</div>
+            </h2>
+            <div class="slider-section-text-wrapper">
+              <div>services</div>
+              <p>We transform your design ideas into amazing 3D visualization projects.  We are passionate about photo realistic renderings and our goal is to bring your ideas to live.</p>
+              <p>Our 3D architectural visualization services include:</p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-container-text">
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="third-page">
         <div class="container">
           <div class="third-page-content">
-            <h2>
-              <span>we</span>
-              <br class="display-mobile" />
-              specialize
-              <span>in efficiently</span>
-              <br class="display-mobile" />
-              collecting data
-              <br class="display-mobile" />
-              <span>and</span>
-              modeling
-              <span>to the </span>
-              <br class="display-mobile" />
-              precise
-              <span> level of </span>
-              <br class="display-mobile" />
-              <div class="inline-right">detail</div>
-            </h2>
             <div class="fix-wrapper inview-hide-header">
               <div class="triggers">
                 <div class="trigger-box" id="trigger-1">
@@ -333,15 +198,16 @@
                 </div>
               </div>
               <div class="fixed-content">
-                <div class="title">
-                  Efficient PROCESS LEADS TO GREAT RESULTS
+                <div class="fixed-content-title">
+                  <h2>HOW IT WORKS?</h2>
+                  <div class="title">Working stages</div>
+                 
+                  <p>
+                    To achieve the highest quality of architectural
+                    visualization we follow the next stages:
+                  </p>
                 </div>
-                <p>
-                  With over 10 years of experience, we know every successful
-                  project starts with smart planning. Our As-Built Measurement
-                  Process ensures that each project is accurate, complete, and
-                  delivered on time.
-                </p>
+
                 <div class="fixed-blocks-wrapper">
                   <div class="fixed-block block-1" style="opacity: 1">
                     <div class="item-1">
@@ -358,18 +224,18 @@
                       <picture>
                         <source
                           media="(min-width: 1300px)"
-                          srcset="as-built-img/third-page-img-1-l.png"
+                          srcset="3d-visualization-img/slider-img-1.jpg"
                           width="567"
                           height="350"
                         />
                         <source
                           media="(min-width: 1024px)"
-                          srcset="as-built-img/third-page-img-1-l.png"
+                          srcset="3d-visualization-img/slider-img-1.jpg"
                           width="397"
                           height="245"
                         />
                         <img
-                          src="as-built-img/third-page-img-1-l.png"
+                          src="3d-visualization-img/slider-img-1.jpg"
                           width="295"
                           height="184"
                           alt=""
@@ -396,18 +262,18 @@
                       <picture>
                         <source
                           media="(min-width: 1300px)"
-                          srcset="as-built-img/third-page-img-2-l.png"
+                          srcset="3d-visualization-img/slider-img-2.jpg"
                           width="567"
                           height="350"
                         />
                         <source
                           media="(min-width: 1024px)"
-                          srcset="as-built-img/third-page-img-2-l.png"
+                          srcset="3d-visualization-img/slider-img-2.jpg"
                           width="397"
                           height="245"
                         />
                         <img
-                          src="as-built-img/third-page-img-2-l.png"
+                          src="3d-visualization-img/slider-img-2.jpg"
                           width="295"
                           height="184"
                           alt=""
@@ -434,18 +300,18 @@
                       <picture>
                         <source
                           media="(min-width: 1300px)"
-                          srcset="as-built-img/third-page-img-3-l.png"
+                          srcset="3d-visualization-img/slider-img-3.jpg"
                           width="567"
                           height="350"
                         />
                         <source
                           media="(min-width: 1024px)"
-                          srcset="as-built-img/third-page-img-3-l.png"
+                          srcset="3d-visualization-img/slider-img-3.jpg"
                           width="397"
                           height="245"
                         />
                         <img
-                          src="as-built-img/third-page-img-3-l.png"
+                          src="3d-visualization-img/slider-img-3.jpg"
                           width="295"
                           height="184"
                           alt=""
@@ -473,18 +339,18 @@
                       <picture>
                         <source
                           media="(min-width: 1300px)"
-                          srcset="as-built-img/third-page-img-4-l.png"
+                          srcset="3d-visualization-img/slider-img-4.jpg"
                           width="567"
                           height="350"
                         />
                         <source
                           media="(min-width: 1024px)"
-                          srcset="as-built-img/third-page-img-4-l.png"
+                          srcset="3d-visualization-img/slider-img-4.jpg"
                           width="397"
                           height="245"
                         />
                         <img
-                          src="as-built-img/third-page-img-4-l.png"
+                          src="3d-visualization-img/slider-img-4.jpg"
                           width="295"
                           height="184"
                           alt=""
@@ -495,6 +361,7 @@
                 </div>
               </div>
             </div>
+            <div class="background-transit"></div>
           </div>
         </div>
       </section>
@@ -1184,8 +1051,15 @@
         ></path>
       </clipPath>
     </svg>
+    <svg class="svg">
+      <clipPath id="fs-slider-l" clipPathUnits="objectBoundingBox"><path d="M1,0.026 L1,0 H0.087 C0.081,0,0.075,0.004,0.071,0.011 L0.007,0.118 C0.002,0.126,0,0.135,0,0.146 L0,1 H0.835 L1,1 C0.998,0.738,1,0.732,1,0.725 V0.026"></path></clipPath>
+    </svg>
+    <svg class="svg">
+      <clipPath id="fs-slider-s" clipPathUnits="objectBoundingBox"><path d="M1,0.011 L1,0 H0.214 C0.191,0,0.17,0.002,0.154,0.004 L0.029,0.025 C0.011,0.029,0,0.033,0,0.038 V0.989 L0,1 H0.602 L1,1 V0.011"></path></clipPath>
+    </svg>
+    <div class="clipped"></div>
     <script src="layout.js"></script>
-    <script src="as-built.js"></script>
     <script src="full-screen-slider.js"></script>
+    <script src="3d-visualization.js"></script>
   </body>
 </html>

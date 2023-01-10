@@ -375,6 +375,7 @@ display: none;
 padding-left: 130px;
 }
   .main-page-content > h1 {
+    text-align-last: center;
     font-size: 52px;
     line-height: 60px;
   }
@@ -386,10 +387,9 @@ padding-right: 350px;
   }
   .main-page-images-wrapper {
     display: flex;
-    gap: 23px;
     align-items: flex-end;
-bottom: 40px;
-right: 30px;
+bottom: -6px;
+right: -14px;
   }
   .sf-span {
 font-size: 13px;
@@ -540,15 +540,15 @@ gap: 45px;
     font-size: 25px;
   }
   .main-page-text {
-    padding-right: 590px;
+    padding-right: 612px;
   }
   .main-page-images-wrapper {
-    bottom: 50px;
-    gap: 53px;
-    right: 40px;
+    bottom: 0px;
+    right: -12px;
   }
   .main-page-text p {
     font-size: 16px;
+    line-height: 28px;
   }
   .sf-span {
 font-size: 18px; 

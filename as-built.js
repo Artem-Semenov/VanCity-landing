@@ -1,4 +1,4 @@
-firstSwiper = new Swiper(".second-page-slider-line", {
+const firstSwiper = new Swiper(".second-page-slider-line", {
   direction: "horizontal",
   speed: 500,
   grabCursor: true,

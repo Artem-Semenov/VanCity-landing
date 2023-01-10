@@ -21,6 +21,10 @@ color: rgba(17, 44, 65, 0.5);
 .display-m-l {
   display: none;
 }
+.fixed-content-title {
+  display: flex;
+  flex-direction: column;
+}
 .fixed-content-title h2 {
   font-family: 'Bai Jamjuree';
   font-style: normal;
@@ -34,6 +38,7 @@ color: rgba(17, 44, 65, 0.5);
 }
 
 .fixed-content-title .title {
+  position: relative;
   font-weight: 500;
 font-size: 14px;
 line-height: 24px;
@@ -84,7 +89,58 @@ color: rgba(177, 222, 219, 0.7);
   padding-left: 0;
   padding-right: 0;
 }
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+
+@media(min-width: 640px) {
+  .order-1 {
+    width: fit-content;
+align-self: center;
+  }
+}
 @media(min-width: 1024px) {
+
+  .fixed-content-title .title::before {
+
+    left: -62px;
+ 
+  }
+  .fixed-content {
+    padding: 72px 22px 0px 62px;
+  }
+  .fixed-content-title {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.order-1 {
+  order: 2;
+display:  flex;
+flex-basis: 80%;
+justify-content: flex-start;
+}
+.fixed-content-title h2  {
+  font-size: 66px;
+}
+.order-2 {
+  order: 1;
+margin-right: auto;
+flex-basis: 20%;
+display: flex;
+align-items: flex-end;
+}
+.fixed-content-title .title{
+  margin-bottom: 10px;
+}
   .display-m-l {
     display: block;
   }
@@ -133,12 +189,16 @@ text-align: left;
     z-index: 0;
     margin-bottom: -300px;
   }
+  .main-page-images-wrapper {
+    bottom: -20px;
+    right: -25px;
+}
 }
 
 @media(min-width: 1300px) {
   .main-page-content {
     padding-left: 60px;
-   padding-bottom: 90px; 
+   padding-bottom: 60px; 
   }
   .main-page-content h1 {
 padding-left: 257px;
@@ -146,8 +206,25 @@ padding-left: 257px;
   .main-page-text {
     gap: 100px;
     padding-right: 650px;
-  margin-top: 120px;
+  margin-top: 150px;
   align-items: center;
   }
-
+  .main-page-images-wrapper {
+    bottom: -25px;
+    right: -30px;
+}
+ /*  .fixed-content {
+    padding-top: 142px;
+  } */
+ 
+  .order-1 {
+    flex-basis: 79%;
+    padding-left: 10px;
+  }
+  .fixed-content-title h2 {
+    font-size: 90px;
+  }
+ .fixed-content-title {
+  padding-right: 17px;
+ }
 }

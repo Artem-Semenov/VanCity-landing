@@ -171,6 +171,7 @@ display: block;
   .main-page-content > h1 {
     font-size: 50px;
     text-align: left;
+    text-align-last: left;
   }
   .main-page-text {
     display: flex;
@@ -264,9 +265,12 @@ gap: 30px;
     padding-right: 576px;
     gap: 97px;
   }
+  .main-page-content > h1 {
+  margin-bottom: 98px;
+  }
   .main-page-images-wrapper {
-    bottom: 34px;
-    right: 30px;
+    bottom: -10px;
+    right: -15px;
   }
   .main-page-text button {
     margin-bottom: 25px;

@@ -53,7 +53,22 @@
       <section class="main-first-page" id="top">
         <div class="container">
           <div class="main-page-content-wrapper">
-            <img src="img/main-page-img.png" alt="photo" />
+            <picture>
+              <source media="(min-width: 1300px)" 
+              srcset="img/main-page-img-l.png"
+              width="471"
+              height="278"
+              >
+              <source media="(min-width: 1024px)" 
+              srcset="img/main-page-img-m.png"
+              width="353"
+              height="238"
+              >
+              <img src="img/main-page-img-s.png" 
+              alt="photo"
+              width="346"
+              height="207" />
+            </picture>
             <div class="main-first-page-content">
               <!--  <img src="img/main-page-img.png" alt="photo" /> -->
               <div class="main-first-page-title">
@@ -875,7 +890,8 @@
         </div>
         <div class="burger-bottom">
           <div>© 2022</div>
-          <a href="">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
         </div>
       </div>
     </div>

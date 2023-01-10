@@ -101,13 +101,11 @@ color: #B1DEDB;
 .main-page-content-wrapper {
   position: relative;
   }
-.main-page-content-wrapper > img {
+.main-page-content-wrapper > picture {
   position: absolute;
   z-index: 1;
   bottom: 9px;
   right: 2px;
-  width: 330px;
-  height: 187px;
 }
 
 .sub-main-page {
@@ -897,6 +895,10 @@ margin-left: 227px;
 .pr-40 {
   padding-right: 0px;
 }
+.main-page-content-wrapper > picture {
+  bottom: -5px;
+    right: -5px;
+}
 }
 @media (min-width: 1300px) {
   .second-page-photos-wrapper {
@@ -912,11 +914,11 @@ margin-left: 300px;
     margin-left: 40px;
   }
  
-  .main-page-content-wrapper > img {
+  .main-page-content-wrapper > picture {
     width: auto;
     height: auto;
-    bottom: 45px;
-    right: 30px;
+    bottom: -10px;
+    right: -5px;
   }
   .sf-span {
 font-size: 18px; 

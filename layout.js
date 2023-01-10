@@ -135,7 +135,7 @@ contactCloseButton.addEventListener("click", function (e) {
 });
 
 /**
- * SMOOTH SCROLL
+ * SMOOTH SCROLL to top - deactivating slider while scrolling to avoid bug
  */
 class SmoothAnchorScroll {
   init() {

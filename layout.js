@@ -4,7 +4,7 @@ const windowWidth = window.innerWidth;
  * SLIDER
  */
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".layout-swiper", {
   direction: "horizontal",
   // loop: true,
   speed: 500,

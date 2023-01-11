@@ -235,7 +235,7 @@ left: -120px;
 .visualization-slider-drug.swiper-scrollbar {
 background: rgba(0,0,0,.1);
 }
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+.swiper-horizontal>.swiper-scrollbar, .visualization-slider-drug.swiper-scrollbar.swiper-scrollbar-horizontal {
   width: 99% !important;
   position: absolute !important;
   bottom: -75px !important;

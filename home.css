@@ -104,8 +104,8 @@ color: #B1DEDB;
 .main-page-content-wrapper > picture {
   position: absolute;
   z-index: 1;
-  bottom: 9px;
-  right: 2px;
+  bottom: -15px;
+  right: -15px;
 }
 
 .sub-main-page {

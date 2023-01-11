@@ -6,20 +6,14 @@ const windowWidth = window.innerWidth;
 
 const swiper = new Swiper(".layout-swiper", {
   direction: "horizontal",
-  // loop: true,
   speed: 500,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // freeMode: true,
-  /* mousewheel: {
-  releaseOnEdges: true,
-  eventsTarget: ".slider"
-}, */
   scrollbar: {
     enabled: true,
-    el: ".swiper-scrollbar",
+    el: ".layout-swiper-scrollbar",
     draggable: true,
   },
   slidesPerView: 1.23,
@@ -80,7 +74,6 @@ document.addEventListener("scroll", function (e) {
   } else if (blockPosition < 0) {
     num = 1;
   }
-  // console.log(firstSwiper.activeIndex);
   moovingBlocks.forEach(
     (el) => (el.style.top = `${deviceDelta - num / delimeter}px`)
   );
@@ -177,6 +170,9 @@ function isInView(el) {
   } else return false;
 }
 
+/** 
+ * Fade in - Fade out functions
+*/
 function fadeIn(el, display) {
   el.style.opacity = 0;
   el.style.display = display || "block";

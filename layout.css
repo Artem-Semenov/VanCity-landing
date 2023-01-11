@@ -507,9 +507,7 @@ color: #112C41;
   /* border-bottom-right-radius: 115px; */
 
 }
-.images-block-photos div img{
-  /* border-radius: 8px; */
-}
+
 .images-block-photos div {
   display: flex;
   flex-direction: column;
@@ -701,9 +699,7 @@ font-size: 14px;
 line-height: 28px;
 color: #B1DEDB;
 }
-.contact-us-inner-content > form > div > input {
-  
-}
+
 .contact-us-close-button {
   align-self: flex-end;
 }
@@ -756,17 +752,12 @@ margin-top: 20px;
     font-size: 14px;
     padding: 12px 18px;
   }
-  .footer-content {
-    /* background: url(img/footer-bg-s.svg) no-repeat; */
-  }
+
   .footer .footer-logo-bg > picture {
     top: 20px;
     left: 60px 
   }
-  .footer .footer-logo-bg > picture > img {
-   /*  width: 450px;
-    height: 170px; */
-  }
+
   
   .swiper {
     width: 600px;
@@ -794,12 +785,6 @@ margin-top: 20px;
 
     }
    
-    .footer .footer-logo-bg {
-      /* margin-top: 109px; */
-    }
-    .ml-104 {
-      /* margin-left: 250px; */
-    }
     .contact-us-decor {
       top: calc(50% - 20px);
       
@@ -906,10 +891,7 @@ display: none;
     flex-basis: 40%;
     margin-top: 0;
   }
-  .footer-content {
-    /* margin: 0 -10px; */
-    /* background: url(img/footer-bg-m.svg) no-repeat; */
-  }
+
    
      .footer .footer-logo-bg {
    border-bottom-right-radius: 200px;
@@ -920,10 +902,7 @@ display: none;
       top: 100px;
       left: 20px
     }
-    .footer .footer-logo-bg > picture > img {
-      /* width: unset;
-      height: unset; */
-    }
+ 
     .footer-arrow-up {
       right: 22px;
       bottom: 22px;
@@ -1034,9 +1013,7 @@ right: 0px;
 .images-block-photos div {
   gap: 15px;
 }
-.images-block-photos div img{
-  /* border-radius: 20px; */
-}
+
 .images-block-title {
   flex-direction: row;
   align-items: flex-end;
@@ -1113,9 +1090,7 @@ right: 0px;
 .pl-150 {
   padding-left: 150px;
 }
-.pl-50 {
-  /* padding-left: 50px; */
-}
+
 .pl-10 {
   padding-left: 10px;
 }
@@ -1239,10 +1214,7 @@ right: 0px;
   .images-block-title {
   gap: 85px;
   }
-  .footer-content {
-    /* background: url(img/footer-bg-l.svg) no-repeat; */
-    
-  }
+
   .footer .footer-logo-bg > picture {
     top: 89px;
     left: 94px

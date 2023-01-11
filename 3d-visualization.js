@@ -1,9 +1,6 @@
 const firstSwiper = new Swiper(".slider-swiper-wrapper", {
   direction: "horizontal",
-  // loop: true,
-  // direction: 'vertical',
   speed: 500,
-  // slideToClickedSlide: true,
   centeredSlides: true,
   simulateTouch: true,
   grabCursor: true,

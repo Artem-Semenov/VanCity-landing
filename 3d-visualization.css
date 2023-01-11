@@ -225,13 +225,7 @@ text-transform: uppercase;
 color: #B1DEDB;
 
 }
-/* .visualization-slider-drug {
-position: absolute;
-width: 255px;
-height: 3px;
-transform: rotate(90deg);
-left: -120px;
-} */
+
 .visualization-slider-drug.swiper-scrollbar {
 background: rgba(0,0,0,.1);
 }

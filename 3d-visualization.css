@@ -65,9 +65,7 @@ color: rgba(177, 222, 219, 0.7);
 
 
 }
-.third-page-content {
-  background: transparent;
-}
+
 .fixed-content {
   padding-top: 50px;
   padding-left: 12px;
@@ -83,8 +81,13 @@ color: rgba(177, 222, 219, 0.7);
   background: rgba(177, 222, 219, 0.1);
   margin-bottom: -250px;
 }
-.third-page-content {
+.third-page {
   margin-top: 100px;
+}
+.third-page-content {
+  background: transparent;
+  margin-top: 0px;
+  margin-bottom: -350px;
   padding-top: 0px;
   padding-left: 0;
   padding-right: 0;
@@ -142,7 +145,7 @@ text-align: right;
 }
 .slider-section-text-wrapper {
   margin-top: 35px;
-  margin-bottom: 146px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -194,7 +197,7 @@ text-transform: uppercase;
 color: rgba(177, 222, 219, 0.2);
 }
 .slider-container-text > p span {
-  font-size: 10px;
+  font-size: 12px;
   color: rgba(177, 222, 219, 0.6);
   text-transform: none;
 }
@@ -229,8 +232,17 @@ height: 3px;
 transform: rotate(90deg);
 left: -120px;
 } */
-
-
+.visualization-slider-drug.swiper-scrollbar {
+background: rgba(0,0,0,.1);
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 99% !important;
+  position: absolute !important;
+  bottom: -75px !important;
+}
+.inner-content {
+  position: relative;
+}
 .s-inline {
 display: inline;
 }
@@ -274,17 +286,24 @@ margin: 0 -24px;
 }
 
 @media(min-width: 480px) {
-   
-}
-@media(min-width: 640px) {
   .slide-background-prev {
-    background: linear-gradient(90deg, #112C41 79.73%, rgba(17, 44, 65, 0.5) 100%);
+    background: linear-gradient(90deg, #112C41 82.73%, rgba(17, 44, 65, 0.5) 100%);
 transition-duration: .3s;
    }
     .slide-background-next {
-  background: linear-gradient(270deg, #112C41 81.44%, rgba(17, 44, 65, 0.5) 100%);
+  background: linear-gradient(270deg, #112C41 83.44%, rgba(17, 44, 65, 0.5) 100%);
   transition-duration: .3s;
-  } 
+  }  
+}
+@media(min-width: 640px) {
+  .slide-background-prev {
+    background: linear-gradient(90deg, #112C41 76.73%, rgba(17, 44, 65, 0.5) 100%);
+transition-duration: .3s;
+   }
+    .slide-background-next {
+  background: linear-gradient(270deg, #112C41 79.44%, rgba(17, 44, 65, 0.5) 100%);
+  transition-duration: .3s;
+  }  
   .m-inline {
     display: inline;
   }
@@ -294,6 +313,18 @@ align-self: center;
   }
 }
 @media(min-width: 1024px) {
+  .slider-container-text {
+flex-basis: 49%;
+padding-left: 37px;
+  }
+  .slide-background-prev {
+    background: linear-gradient(90deg, #112C41 81.73%, rgba(17, 44, 65, 0.5) 100%);
+transition-duration: .3s;
+   }
+    .slide-background-next {
+  background: linear-gradient(270deg, #112C41 84.44%, rgba(17, 44, 65, 0.5) 100%);
+  transition-duration: .3s;
+  }  
   .l-margin-left-30 {
     margin-left: 30px;
   }
@@ -399,13 +430,14 @@ text-align: left;
 }
 .slider-section-text-wrapper > div {
   flex-basis: 22%;
+  padding-left: 40px;
 }
 .slider-section-text-wrapper > p {
 flex-basis: 24%
 }
 .slider-swiper-wrapper.swiper {
   height: 514px;
-  top: -165px;
+  top: -100px;
   flex-shrink: 0;
 }
 .slider-container {
@@ -415,6 +447,7 @@ flex-basis: 24%
 .inner-content {
   gap: 20px;
   margin-bottom: 30px;
+  padding-left: 70px;
 }
 .inner-content > p {
   font-size: 14px;
@@ -444,6 +477,20 @@ padding-right: 150px;
   transform: rotate(-180deg);
   /* transition: all ease 0.3s; */
 
+}
+.swiper-horizontal>.swiper-scrollbar, .visualization-slider-drug.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 4px !important;
+  position: absolute !important;
+  left: -15%;
+}
+.slider-section-text-wrapper > div:before {
+  width: 3px;
+  height: 24px;
+  top: -4px;
+  left: -24px;
+}
+.slider-section-text-wrapper {
+  margin-bottom: 146px;
 }
 }
 
@@ -489,6 +536,7 @@ padding-left: 257px;
  }
  .slider-swiper-wrapper.swiper {
   height: 685px;
+  top: -165px;
  }
  .slide-background-next, .slide-background-prev {
   height: 120px;
@@ -502,9 +550,10 @@ line-height: 60px;
  }
  .slider-container-text {
   flex-basis: 52%;
+  height: fit-content;
  }
  .inner-content > p {
-  padding-right: 270px;
+  padding-right: 250px;
  }
  .slider-section-text-wrapper > div {
 flex-basis: 23%;
@@ -512,5 +561,8 @@ margin-right: -8px
 }
 .slider-section-text-wrapper {
   gap: 23px;
+}
+.visualization-slider-drug.swiper-scrollbar.swiper-scrollbar-horizontal {
+  left: -10%;
 }
 }

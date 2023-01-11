@@ -1,5 +1,6 @@
-const visualizationSwiper = new Swiper(".slider-swiper-wrapper", {
+const firstSwiper = new Swiper(".slider-swiper-wrapper", {
   direction: "horizontal",
+  // loop: true,
   // direction: 'vertical',
   speed: 500,
   // slideToClickedSlide: true,
@@ -8,6 +9,7 @@ const visualizationSwiper = new Swiper(".slider-swiper-wrapper", {
   grabCursor: true,
   spaceBetween: 5,
   scrollbar: {
+    enabled: true,
     el: ".visualization-slider-drug",
     draggable: true,
   },

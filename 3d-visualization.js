@@ -7,6 +7,7 @@ const firstSwiper = new Swiper(".slider-swiper-wrapper", {
   centeredSlides: true,
   simulateTouch: true,
   grabCursor: true,
+  initialSlide: 1,
   spaceBetween: 5,
   scrollbar: {
     enabled: true,

@@ -773,7 +773,8 @@ display: block;
 }
 
 .bg-decor {
-  top: 385px;
+  top: 330px;
+  height: 550px;
 }
 .bg-decor div:first-child {
   background: #B1DEDB;
@@ -901,6 +902,9 @@ margin-left: 227px;
 }
 }
 @media (min-width: 1300px) {
+  .bg-decor {
+    top: 385px;
+  }
   .second-page-photos-wrapper {
     margin-top: -25px;
   }

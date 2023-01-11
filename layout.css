@@ -810,7 +810,7 @@ line-height: 60px;
     }
 
     .contact-us-inner-content .dark {
-font-size: 20px;
+font-size: 19px;
     }
     .footer-content {
       margin: 0 -12px;
@@ -831,7 +831,6 @@ font-size: 20px;
     padding-left: 45px;
   }
   .lh-20.dark {
-
     line-height: 35px;
     padding-left: 50px;
     }
@@ -1093,6 +1092,8 @@ right: 0px;
 
 .contact-us-content {
   gap: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .block-right {
   display: inline;
@@ -1165,6 +1166,13 @@ right: 0px;
 
 
 @media (min-width: 1300px) {
+  .lh-20.dark {
+    font-size: 20px;
+  }
+  .contact-us-content {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
   .images-block-title {
     padding: 0px 75px 0px 258px;
   }

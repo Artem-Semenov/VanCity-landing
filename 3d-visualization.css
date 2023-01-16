@@ -314,6 +314,9 @@ align-self: center;
   }
 }
 @media(min-width: 1024px) {
+  .align-right span {
+    font-size: 16px;
+  }
   .slider-container-text {
 flex-basis: 49%;
 padding-left: 37px;
@@ -496,6 +499,9 @@ padding-right: 150px;
 }
 
 @media(min-width: 1300px) {
+  .align-right span {
+    font-size: 25px;
+  }
   .slider-section-content h2 {
     padding-left: 80px;
     font-size: 65px;

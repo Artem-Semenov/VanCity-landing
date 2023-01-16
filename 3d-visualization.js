@@ -13,30 +13,39 @@ const firstSwiper = new Swiper(".slider-swiper-wrapper", {
   },
   breakpoints: {
     320: {
+      direction: 'horizontal',
       slidesPerView: 1.15,
     },
     370: {
+      direction: 'horizontal',
       slidesPerView: 1.16,
     },
     380: {
+      direction: 'horizontal',
       slidesPerView: 1.21,
     },
     390: {
+      direction: 'horizontal',
       slidesPerView: 1.24,
     },
     400: {
+      direction: 'horizontal',
       slidesPerView: 1.27,
     },
     410: {
+      direction: 'horizontal',
       slidesPerView: 1.3,
     },
     450: {
+      direction: 'horizontal',
       slidesPerView: 1.35,
     },
     480: {
+      direction: 'horizontal',
       slidesPerView: 1.4,
     },
     640: {
+      direction: 'horizontal',
       slidesPerView: 1.5,
     },
     1024: {

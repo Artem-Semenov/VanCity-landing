@@ -1,7 +1,3 @@
-
-
-
-
 .main {
   margin-top: 8px; 
 }
@@ -19,30 +15,7 @@ clip-path: url(#main-page-s);
 
 }
 
-/* .main-first-page-content:before {
-  content: '';
-  width: 68px;
-  height: 68px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #112C41;
-  background-size: cover;
-  -webkit-clip-path: url(#mobile-top-left);
-  clip-path: url(#mobile-top-left);
-}
-.main-first-page-content::after {
-  content: '';
-  width: 126px;
-  height: 126px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background: #112C41;
-  background-size: cover;
-  -webkit-clip-path: url(#mobile-bottom-right);
-  clip-path: url(#mobile-bottom-right);
-}  */
+
 
 .main-first-page-title {
 font-family: 'Bai Jamjuree';
@@ -204,30 +177,7 @@ border-bottom-left-radius: 20px;
   -webkit-clip-path: url(#second-page-s);
   clip-path: url(#second-page-s);
 }
-/* .second-page-content:before {
-  content: '';
-  width: 68px;
-  height: 68px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #112C41;
-  background-size: cover;
-  -webkit-clip-path: url(#mobile-top-left);
-  clip-path: url(#mobile-top-left);
-}
-.second-page-content:after {
-  content: '';
-  width: 126px;
-  height: 126px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background: #213E50;
-  background-size: cover;
-  -webkit-clip-path: url(#mobile-bottom-right);
-  clip-path: url(#mobile-bottom-right);
-}  */
+
 .second-page-content > h2, .third-page-content > h2 {
   font-family: 'Bai Jamjuree';
 font-style: normal;
@@ -576,30 +526,7 @@ margin-right: 6px;
   .main {
     margin-top: 0;
   }
- /*  .main-first-page-content:before {
-    width: 112px;
-    height: 112px;
-    -webkit-clip-path: url(#desktop-top-left);
-    clip-path: url(#desktop-top-left);
-  }
-  .main-first-page-content::after {
-    width: 212px;
-    height: 212px;
-    -webkit-clip-path: url(#desktop-bottom-right);
-    clip-path: url(#desktop-bottom-right);
-  }  */
-/*   .second-page-content:before {
-    width: 112px;
-    height: 112px;
-    -webkit-clip-path: url(#desktop-top-left);
-    clip-path: url(#desktop-top-left);
-  }
-  .second-page-content:after {
-    width: 212px;
-    height: 212px;
-    -webkit-clip-path: url(#desktop-bottom-right);
-    clip-path: url(#desktop-bottom-right);
-  }  */
+
   .mobile-display-none {
 display: block;
   }

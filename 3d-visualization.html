@@ -936,21 +936,21 @@
           </div>
         </h2>
         <p>contact form</p>
-        <form action="">
+        <form id="contacts-form" action="">
           <div>
-            <input type="text" name="" id="" placeholder="Name" />
+            <input required class="input-field" type="text" name="name" id="cont-inp-name" placeholder="Name" />
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Phone number" />
+            <input required class="input-field" type="tel" pattern="[0-9]{8-10}" name="phone" id="cont-inp-phone" placeholder="Phone number" />
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Email" />
+            <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input-field" type="email" name="email" id="cont-inp-email" placeholder="Email" />
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Additional info" />
+            <input class="input-field" type="text" name="info" id="" placeholder="Additional info" />
           </div>
           <div class="contact-us-submit-button" id="contact-us-submit-button">
-            <button type="submit">submit</button>
+            <button id="contacts-submit" type="submit">submit</button>
           </div>
         </form>
       </div>
@@ -986,21 +986,21 @@
           </div>
         </h2>
         <p>contact form</p>
-        <form action="">
+        <form id="employment-form" action="">
           <div>
-            <input type="text" name="" id="" placeholder="Name" />
+            <input required class="input-field" type="text" name="name" id="cont-inp-name" placeholder="Name" />
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Phone number" />
+            <input required class="input-field" type="tel" pattern="[0-9]{8-10}" name="phone" id="cont-inp-phone" placeholder="Phone number" />
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Email" />
+            <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input-field" type="email" name="email" id="cont-inp-email" placeholder="Email" />
           </div>
           <div>
             <label for="resume">Upload your resume please</label>
             <input type="file" name="resume" id="" placeholder="Resume" />
           </div>
-          <div class="contact-us-submit-button" id="contact-us-submit-button">
+          <div class="contact-us-submit-button" id="employment-submit-button">
             <button type="submit">submit</button>
           </div>
         </form>
